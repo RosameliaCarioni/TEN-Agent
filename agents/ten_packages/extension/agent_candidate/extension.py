@@ -805,7 +805,7 @@ class OpenAIV2VExtension(Extension):
             Analyze and merge the information from these four sources to identify the top three companies that best match the candidate's profile. Consider the candidate's skills, preferences, and career goals, alongside the company culture and job opportunities.
 
             **Output Format:**
-            Provide the top seven company matches in a structured format, including:
+            Provide the top three company matches in a structured format, including:
             - Company Name
             - Key Reasons for the Match (e.g., aligned skills, cultural fit, etc.)
             - Relevant Job Opportunities or Roles

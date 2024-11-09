@@ -577,3 +577,132 @@ Role: assistant
 User: 
 Role: assistant
 ----------------------------------------
+User: Hello!
+Role: assistant
+----------------------------------------
+User:  I'm here to[interrupted]
+Role: assistant
+----------------------------------------
+User: Hello
+
+Role: user
+----------------------------------------
+User: Hi there!
+Role: assistant
+----------------------------------------
+User:  I'm here to talk with you about your experiences at work.
+Role: assistant
+----------------------------------------
+User:  I'd love to hear your thoughts on what's going well,
+Role: assistant
+----------------------------------------
+User:  what could be better,
+Role: assistant
+----------------------------------------
+User:  and how you're feeling in your role.
+Role: assistant
+----------------------------------------
+User: 
+Role: assistant
+----------------------------------------
+User: Hello
+
+Role: user
+----------------------------------------
+User: I'm sorry to hear[interrupted]
+Role: assistant
+----------------------------------------
+User: I'm doing well in general, but I'm a bit upset because one of my co-workers was a bit mean the other day and the HR person didn't do anything.
+
+Role: user
+----------------------------------------
+User: Yes,
+Role: assistant
+----------------------------------------
+User:  I hear you!
+Role: assistant
+----------------------------------------
+User: Hello, do you hear me?
+
+Role: user
+----------------------------------------
+User:  It sounds like you had a tough experience with a coworker.
+Role: assistant
+----------------------------------------
+User:  I'd like to understand better so I can support you.
+Role: assistant
+----------------------------------------
+User:  Could you share a bit more about what happened and how it was handled?
+Role: assistant
+----------------------------------------
+User: 
+Role: assistant
+----------------------------------------
+User: Yeah, so the HR person didn't do anything, and then it just happened at the office.
+
+Role: user
+----------------------------------------
+User: and
+
+Role: user
+----------------------------------------
+User: It's understandable to feel upset when a situation like that happens.
+Role: assistant
+----------------------------------------
+User: I'm okay about it, I guess at this point.
+
+Role: user
+----------------------------------------
+User:  It can be really tough when conflicts at work aren't addressed in the way we'd hope.
+Role: assistant
+----------------------------------------
+User:  If you could change one thing about how these situations are handled at your workplace,
+Role: assistant
+----------------------------------------
+User:  what would it be?
+Role: assistant
+----------------------------------------
+User: 
+Role: assistant
+----------------------------------------
+User: Hello
+
+Role: user
+----------------------------------------
+User: Hello,
+Role: assistant
+----------------------------------------
+User:  I'm Nico!
+Role: assistant
+----------------------------------------
+User:  I'm here to talk with you about your experiences at[interrupted]
+Role: assistant
+----------------------------------------
+User: Hello,
+Role: assistant
+----------------------------------------
+User:  I'm Nico!
+Role: assistant
+----------------------------------------
+User:  I'm here to talk with you about your experiences at work.
+Role: assistant
+----------------------------------------
+User:  I'd love to hear your thoughts on what's going well,
+Role: assistant
+----------------------------------------
+User:  what could be better,
+Role: assistant
+----------------------------------------
+User:  and how you're feeling in your role.
+Role: assistant
+----------------------------------------
+User: Yo, what
+
+Role: user
+----------------------------------------
+User:  What's been on your mind lately?
+Role: assistant
+----------------------------------------
+User: 
+Role: assistant
+----------------------------------------
