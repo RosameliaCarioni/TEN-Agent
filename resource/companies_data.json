@@ -105,38 +105,26 @@
     ]
   },
   {
-    "companyName": "Arctic Renewable Energy",
-    "location": "Reykjavik, Iceland",
-    "domain": "Energy",
+    "companyName": "Scandinavian Consulting Group",
+    "location": "Stockholm, Sweden",
+    "domain": "Consulting",
     "jobListings": [
       {
-        "title": "Renewable Energy Engineer",
-        "location": "Reykjavik, Iceland",
+        "title": "Project Management Consultant",
+        "location": "Stockholm, Sweden",
         "salaryRange": "€60,000 - €75,000",
         "requirements": [
-          "Background in renewable energy technologies",
-          "Experience with wind or solar projects",
-          "Project management skills"
+          "3+ years of experience in project management",
+          "Proficiency in project management tools (e.g., MS Project, Asana)",
+          "Strong client-facing and communication skills"
         ],
         "responsibilities": [
-          "Design and implement renewable energy systems",
-          "Analyze environmental impact",
-          "Coordinate with stakeholders"
+          "Oversee and execute client projects from initiation to closure",
+          "Develop project plans, schedules, and budgets",
+          "Coordinate with clients and internal teams to ensure project success",
+          "Analyze project performance and provide regular reports to stakeholders"
         ]
       }
-    ],
-    "benefits": {
-      "Health insurance": true,
-      "Pension plan": true,
-      "Remote work options": true,
-      "Paid time off": true,
-      "Professional development": true
-    },
-    "workCultureValues": [
-      "Sustainability",
-      "Innovation",
-      "Collaboration",
-      "Environmental stewardship"
     ]
   },
   {
