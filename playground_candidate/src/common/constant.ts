@@ -1,5 +1,7 @@
 import { IOptions, ColorItem, LanguageOptionItem, VoiceOptionItem, GraphOptionItem } from "@/types"
-export const GITHUB_URL = "https://github.com/TEN-framework/ASTRA.ai"
+export const GITHUB_URL = "https://github.com/RosameliaCarioni/TEN-Agent/tree/junction"
+export const AGORA_URL = "https://www.agora.io/en/"
+export const AAVA_URL = "https://www.aava.fi/"
 export const OPTIONS_KEY = "__options__"
 export const DEFAULT_OPTIONS: IOptions = {
   channel: "",
@@ -27,12 +29,12 @@ export const LANGUAGE_OPTIONS: LanguageOptionItem[] = [
 ]
 export const GRAPH_OPTIONS: GraphOptionItem[] = [
   {
-    label: "agent_employee",
-    value: "agent_employee"
+    label: "Candidate",
+    value: "agent_candidate",
   },
   {
-    label: "agent_candidate",
-    value: "agent_candidate"
+    label: "Employee",
+    value: "agent_employee",
   }
 ]
 
@@ -51,7 +53,7 @@ export const VOICE_OPTIONS: VoiceOptionItem[] = [
   }
 ]
 export const COLOR_LIST: ColorItem[] = [{
-  active: "#f40a64",
+  active: "#fff",
   default: "#143354"
 }, {
   active: "#563FD8",

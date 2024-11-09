@@ -30,7 +30,10 @@ const getInitialState = (): InitialState => {
     chatItems: [],
     isFullscreen: false,
     isAvatarLoaded: false,
-    graphName: "agent_candidate",
+    //graphName: "va_deepgram_openai_cartesia",
+    //graphName: "va_deepgram_openai_fish",
+    graphName: "va_openai_v2v",
+
     graphs: [],
     extensions: {},
     overridenProperties: {},

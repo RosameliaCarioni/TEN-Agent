@@ -80,7 +80,7 @@ const Rtc = () => {
   const onTextChanged = (text: ITextItem) => {
     if (text.dataType == "transcribe") {
       //console.error('text.text', text.text);
-      
+
       const isAgent = Number(text.uid) != Number(userId)
       dispatch(addChatItem({
         userId: text.uid,
@@ -100,10 +100,8 @@ const Rtc = () => {
   return <section className={styles.rtc}>
     <Agent audioTrack={remoteuser?.audioTrack}></Agent>
     <div className={styles.you}>
-      {/*
       <MicSection audioTrack={audioTrack}></MicSection>
-      */}
-      <CamSection videoTrack={videoTrack}></CamSection>
+      {/* <CamSection videoTrack={videoTrack}></CamSection> */}
     </div>
   </section>
 }

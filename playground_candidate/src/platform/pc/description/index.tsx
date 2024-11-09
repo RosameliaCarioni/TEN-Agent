@@ -122,7 +122,7 @@ const Description = () => {
 
   return <div className={styles.description}>
 
-    <span className={styles.text}>Amie is an intelligent companion powered by TEN</span>
+    <span className={styles.text}>Nova is an intelligent companion for scouting positions in companies aligning with your values</span>
     {/*
     <CustomSelect className={styles.voiceSelect}
         disabled={agentConnected}

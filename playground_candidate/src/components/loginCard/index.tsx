@@ -4,8 +4,8 @@ import packageData from "../../../package.json"
 import { useRouter } from 'next/navigation'
 import { message } from "antd"
 import { useState } from "react"
-import { GithubIcon, HeartIcon, LogoIcon } from "../icons"
-import { GITHUB_URL, getRandomUserId, useAppDispatch, getRandomChannel } from "@/common"
+import { GithubIcon, LogoH, AavaIcon } from "../icons"
+import { GITHUB_URL, getRandomUserId, useAppDispatch, getRandomChannel, AGORA_URL, AAVA_URL } from "@/common"
 import { setOptions } from "@/store/reducers/global"
 import styles from "./index.module.scss"
 import { LoadingOutlined } from "@ant-design/icons"
@@ -22,6 +22,18 @@ const LoginCard = () => {
   const onClickGithub = () => {
     if (typeof window !== "undefined") {
       window.open(GITHUB_URL, "_blank")
+    }
+  }
+
+  const onClickLogo = () => {
+    if (typeof window !== "undefined") {
+      window.open(AGORA_URL, "_blank")
+    }
+  }
+
+  const onClickAava = () => {
+    if (typeof window !== "undefined") {
+      window.open(AAVA_URL, "_blank")
     }
   }
 
@@ -66,8 +78,8 @@ const LoginCard = () => {
     </section>
     <section className={styles.content}>
       <div className={styles.title}>
-        <HeartIcon transform="scale(1.5 1.5)"></HeartIcon>
-        <span className={styles.text}>Aime <br></br> Your virtual companion</span>
+        <LogoH transform="scale(0.3)" margin-bottom="-100px" margin-top="-100px" margin-left="-100px" margin-right="-100px"></LogoH>
+        <span className={styles.text}> Your professional journey<br></br>healthier & happier</span>
       </div>
       <div className={styles.section}>
         <input
@@ -87,7 +99,10 @@ const LoginCard = () => {
           {loading ? <LoadingOutlined className={styles.loading}></LoadingOutlined> : null}
         </div>
       </div>
-      <div className={styles.version}>Hackathon 2024</div>
+      <div className={styles.version}>Junction 2024 Challenge<br></br><br></br>ThriveConnect: Redefine Work Well-Being by</div>
+      <div className={styles.aava}>
+        <AavaIcon onClick={onClickAava}></AavaIcon>
+      </div>
     </section >
   </div >
 

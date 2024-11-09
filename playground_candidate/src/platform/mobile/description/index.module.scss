@@ -6,12 +6,13 @@
   align-items: center;
   gap: 12px;
   align-self: stretch;
-  border-bottom: 1px solid #272A2F;
-  background: #181A1D;
+  border-bottom: 0;
+  background: #ffffff10;
+  backdrop-filter: blur(8.8px);
   box-sizing: border-box;
 
   .title {
-    color: var(--Grey-300, #FFC0CB);
+    color: var(--Grey-300, #fff);
     font-size: 14px;
     font-style: normal;
     font-weight: 600;
@@ -65,11 +66,12 @@
   .btnConnect.disabled {
     cursor: not-allowed;
     opacity: 0.6;
-    pointer-events: none;  // Prevent interaction
+    pointer-events: none; // Prevent interaction
   }
 
   .btnConnect.disconnect {
-    background: #181A1D;
+    background: #ffffff10;
+    backdrop-filter: blur(8.8px);
     border: 1px solid var(--Error-400-T, #E95C7B);
   }
 
