@@ -760,3 +760,4 @@ class OpenAIV2VExtension(Extension):
             file.write(f"User: {user_message}\n")
             file.write(f"Role: {role}\n")
             file.write("-" * 40 + "\n")
+        return self.greeting
