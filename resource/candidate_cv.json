@@ -1,0 +1,104 @@
+{
+    "fullName": "Jane Smith",
+    "location": "Stockholm, Sweden",
+    "contactInformation": {
+      "email": "jane.smith@example.com",
+      "phone": "+46 70 123 4567"
+    },
+    "jobExperience": [
+      {
+        "jobTitle": "Software Engineer",
+        "companyName": "Nordic Tech Solutions",
+        "location": "Helsinki, Finland",
+        "employmentDates": {
+          "start": "2020-05",
+          "end": "2023-04"
+        },
+        "keyResponsibilities": [
+          "Developed and maintained web applications using JavaScript and Python",
+          "Collaborated with cross-functional teams in an Agile environment",
+          "Led code reviews and mentored junior developers"
+        ],
+        "achievements": [
+          "Implemented a new caching system that reduced server response time by 30%",
+          "Promoted to team lead within two years of joining"
+        ]
+      },
+      {
+        "jobTitle": "Junior Software Developer",
+        "companyName": "Scandi Digital",
+        "location": "Oslo, Norway",
+        "employmentDates": {
+          "start": "2018-07",
+          "end": "2020-04"
+        },
+        "keyResponsibilities": [
+          "Assisted in the development of mobile applications using Kotlin and Swift",
+          "Participated in design and planning meetings",
+          "Tested applications and fixed bugs"
+        ],
+        "achievements": [
+          "Contributed to a project that won the 'Best New App' award in the Nordic App Awards 2019"
+        ]
+      }
+    ],
+    "technicalSkills": [
+      "JavaScript",
+      "Python",
+      "Java",
+      "React",
+      "AWS",
+      "Docker"
+    ],
+    "softSkills": [
+      "Communication",
+      "Teamwork",
+      "Problem-solving",
+      "Adaptability",
+      "Attention to detail"
+    ],
+    "languages": [
+      {
+        "language": "English",
+        "proficiency": "Fluent"
+      },
+      {
+        "language": "Swedish",
+        "proficiency": "Native"
+      },
+      {
+        "language": "Finnish",
+        "proficiency": "Intermediate"
+      }
+    ],
+    "certificationsAndLicenses": [
+      {
+        "name": "AWS Certified Solutions Architect",
+        "issuingOrganization": "Amazon Web Services",
+        "dateIssued": "2021-03"
+      },
+      {
+        "name": "Certified ScrumMaster (CSM)",
+        "issuingOrganization": "Scrum Alliance",
+        "dateIssued": "2020-08"
+      }
+    ],
+    "education": {
+      "degree": "Master of Science in Computer Science",
+      "graduationDate": "2018-06",
+      "universityName": "KTH Royal Institute of Technology"
+    },
+    "awardsAndRecognition": [
+      {
+        "awardName": "Best New App",
+        "organization": "Nordic App Awards",
+        "dateReceived": "2019-11"
+      },
+      {
+        "awardName": "Dean’s List",
+        "organization": "KTH Royal Institute of Technology",
+        "dateReceived": "2017-06"
+      }
+    ]
+  }
+  

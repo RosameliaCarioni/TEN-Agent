@@ -1,0 +1,29 @@
+{
+    "fullName": "Jane Smith",
+    "desiredJobTitles": ["Senior Software Engineer", "Tech Lead", "Full Stack Developer"],
+    "preferredLocation": ["Helsinki, Finland", "Remote"],
+    "expectedSalaryRange": "€80,000 - €95,000",
+    "careerGoals": "To grow into a technical leadership role where I can mentor junior engineers and work on innovative, impactful projects in the tech industry.",
+    "workCulturePreferences": {
+      "mentalWellBeing": "Highly valued for a supportive workplace",
+      "careerDevelopment": "Seeking continuous learning and growth opportunities",
+      "leadershipStyle": "Prefers supportive and collaborative leadership",
+      "crossDepartmentCollaboration": "Important for teamwork and knowledge sharing",
+      "genderBalance": "Values diversity and inclusivity",
+      "recognitionOfAchievements": "Appreciates regular recognition of accomplishments",
+      "workLifeBalance": "Looks for a strong work-life balance policy",
+      "companyStabilityAndGrowth": "Seeks stability and growth potential in a company",
+      "competitiveCompensation": "Views competitive pay as essential",
+      "coreValues": ["Innovation", "Sustainability", "Teamwork", "Integrity"]
+    },
+    "benefitsPreferences": {
+      "paidSickLeave": "Essential for security during health issues",
+      "healthInsurance": "Important for overall well-being",
+      "pensionPlans": "Important for long-term financial security",
+      "remoteWorkOptions": "Strong preference for flexible location",
+      "childcareSupport": "Valuable for family-oriented candidates",
+      "flexibleWorkingHours": "Highly appreciated for managing work-life balance",
+      "fitnessProgram": "Interest in health and wellness support"
+    }
+  }
+  

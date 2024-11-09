@@ -1,0 +1,317 @@
+[
+  {
+    "companyName": "Nordic Tech Solutions",
+    "location": "Helsinki, Finland",
+    "domain": "Technology",
+    "jobListings": [
+      {
+        "title": "Software Engineer",
+        "location": "Helsinki, Finland",
+        "salaryRange": "€70,000 - €85,000",
+        "requirements": [
+          "3+ years of software development experience",
+          "Proficient in C++ and JavaScript",
+          "Experience with cloud platforms"
+        ],
+        "responsibilities": [
+          "Develop and maintain software",
+          "Collaborate in an Agile team",
+          "Participate in code reviews"
+        ]
+      }
+    ],
+    "benefits": {
+      "Health insurance": true,
+      "Pension plan": true,
+      "Remote work options": true,
+      "Paid time off": true,
+      "Professional development": true
+    },
+    "workCultureValues": [
+      "Innovation",
+      "Sustainability",
+      "Teamwork",
+      "Work-life balance"
+    ]
+  },
+  {
+    "companyName": "Scandi Finance Group",
+    "location": "Oslo, Norway",
+    "domain": "Finance",
+    "jobListings": [
+      {
+        "title": "Financial Analyst",
+        "location": "Oslo, Norway",
+        "salaryRange": "€55,000 - €70,000",
+        "requirements": [
+          "2+ years of financial analysis experience",
+          "Proficient in Excel and financial modeling",
+          "Strong analytical skills"
+        ],
+        "responsibilities": [
+          "Analyze financial data",
+          "Prepare reports for management",
+          "Assist in budgeting and forecasting"
+        ]
+      }
+    ],
+    "benefits": {
+      "Health insurance": true,
+      "Pension plan": true,
+      "Remote work options": false,
+      "Paid time off": true,
+      "Professional development": true
+    },
+    "workCultureValues": [
+      "Integrity",
+      "Detail-oriented",
+      "Client-focused",
+      "Continuous improvement"
+    ]
+  },
+  {
+    "companyName": "Nordic HealthCare",
+    "location": "Copenhagen, Denmark",
+    "domain": "Healthcare",
+    "jobListings": [
+      {
+        "title": "Nurse Practitioner",
+        "location": "Copenhagen, Denmark",
+        "salaryRange": "€45,000 - €60,000",
+        "requirements": [
+          "Licensed Nurse Practitioner",
+          "2+ years of clinical experience",
+          "Strong communication skills"
+        ],
+        "responsibilities": [
+          "Provide care to patients",
+          "Work in a multi-disciplinary team",
+          "Educate patients and families"
+        ]
+      }
+    ],
+    "benefits": {
+      "Health insurance": true,
+      "Pension plan": true,
+      "Remote work options": false,
+      "Paid time off": true,
+      "Professional development": true
+    },
+    "workCultureValues": [
+      "Compassion",
+      "Teamwork",
+      "Excellence",
+      "Patient-centered care"
+    ]
+  },
+  {
+    "companyName": "Arctic Renewable Energy",
+    "location": "Reykjavik, Iceland",
+    "domain": "Energy",
+    "jobListings": [
+      {
+        "title": "Renewable Energy Engineer",
+        "location": "Reykjavik, Iceland",
+        "salaryRange": "€60,000 - €75,000",
+        "requirements": [
+          "Background in renewable energy technologies",
+          "Experience with wind or solar projects",
+          "Project management skills"
+        ],
+        "responsibilities": [
+          "Design and implement renewable energy systems",
+          "Analyze environmental impact",
+          "Coordinate with stakeholders"
+        ]
+      }
+    ],
+    "benefits": {
+      "Health insurance": true,
+      "Pension plan": true,
+      "Remote work options": true,
+      "Paid time off": true,
+      "Professional development": true
+    },
+    "workCultureValues": [
+      "Sustainability",
+      "Innovation",
+      "Collaboration",
+      "Environmental stewardship"
+    ]
+  },
+  {
+    "companyName": "Viking Maritime Services",
+    "location": "Bergen, Norway",
+    "domain": "Maritime",
+    "jobListings": [
+      {
+        "title": "Marine Biologist",
+        "location": "Bergen, Norway",
+        "salaryRange": "€50,000 - €65,000",
+        "requirements": [
+          "Degree in marine biology or related field",
+          "Fieldwork experience",
+          "Knowledge of marine ecosystems"
+        ],
+        "responsibilities": [
+          "Conduct marine research",
+          "Analyze ecological data",
+          "Develop conservation strategies"
+        ]
+      }
+    ],
+    "benefits": {
+      "Health insurance": true,
+      "Pension plan": true,
+      "Remote work options": false,
+      "Paid time off": true,
+      "Professional development": true
+    },
+    "workCultureValues": [
+      "Research-driven",
+      "Sustainability",
+      "Innovation",
+      "Teamwork"
+    ]
+  },
+  {
+    "companyName": "Baltic Design Co.",
+    "location": "Riga, Latvia",
+    "domain": "Design",
+    "jobListings": [
+      {
+        "title": "UX/UI Designer",
+        "location": "Riga, Latvia",
+        "salaryRange": "€40,000 - €55,000",
+        "requirements": [
+          "Experience with design tools like Sketch and Adobe XD",
+          "Portfolio of UX/UI projects",
+          "Understanding of user-centered design principles"
+        ],
+        "responsibilities": [
+          "Design intuitive user interfaces",
+          "Conduct user research",
+          "Collaborate with developers and stakeholders"
+        ]
+      }
+    ],
+    "benefits": {
+      "Health insurance": true,
+      "Pension plan": true,
+      "Remote work options": true,
+      "Paid time off": true,
+      "Professional development": true
+    },
+    "workCultureValues": [
+      "Creativity",
+      "User-centric",
+      "Collaborative",
+      "Innovative"
+    ]
+  },
+  {
+    "companyName": "Aurora Pharmaceuticals",
+    "location": "Stockholm, Sweden",
+    "domain": "Healthcare",
+    "jobListings": [
+      {
+        "title": "Pharmaceutical Researcher",
+        "location": "Stockholm, Sweden",
+        "salaryRange": "€65,000 - €80,000",
+        "requirements": [
+          "Degree in pharmacy or related field",
+          "Experience in drug development",
+          "Knowledge of regulatory requirements"
+        ],
+        "responsibilities": [
+          "Conduct pharmaceutical research",
+          "Develop new medications",
+          "Ensure compliance with industry regulations"
+        ]
+      }
+    ],
+    "benefits": {
+      "Health insurance": true,
+      "Pension plan": true,
+      "Remote work options": false,
+      "Paid time off": true,
+      "Professional development": true
+    },
+    "workCultureValues": [
+      "Innovation",
+      "Safety",
+      "Patient-focused",
+      "Collaboration"
+    ]
+  },
+  {
+    "companyName": "Sustainable Architecture Group",
+    "location": "Vilnius, Lithuania",
+    "domain": "Architecture",
+    "jobListings": [
+      {
+        "title": "Sustainable Architect",
+        "location": "Vilnius, Lithuania",
+        "salaryRange": "€55,000 - €70,000",
+        "requirements": [
+          "Degree in architecture",
+          "Experience with sustainable design",
+          "Proficiency in CAD software"
+        ],
+        "responsibilities": [
+          "Design eco-friendly buildings",
+          "Work with sustainable materials",
+          "Collaborate with construction teams"
+        ]
+      }
+    ],
+    "benefits": {
+      "Health insurance": true,
+      "Pension plan": true,
+      "Remote work options": true,
+      "Paid time off": true,
+      "Professional development": true
+    },
+    "workCultureValues": [
+      "Sustainability",
+      "Innovation",
+      "Teamwork",
+      "Community engagement"
+    ]
+  },
+  {
+    "companyName": "Nordic Gaming Studio",
+    "location": "Helsinki, Finland",
+    "domain": "Entertainment",
+    "jobListings": [
+      {
+        "title": "Game Developer",
+        "location": "Helsinki, Finland",
+        "salaryRange": "€60,000 - €75,000",
+        "requirements": [
+          "Proficient in C# and Unity",
+          "3+ years of game development experience",
+          "Portfolio of released games"
+        ],
+        "responsibilities": [
+          "Develop and optimize game code",
+          "Work with designers and artists",
+          "Test and debug games"
+        ]
+      }
+    ],
+    "benefits": {
+      "Health insurance": true,
+      "Pension plan": true,
+      "Remote work options": true,
+      "Paid time off": true,
+      "Professional development": true
+    },
+    "workCultureValues": [
+      "Creativity",
+      "Innovation",
+      "Teamwork",
+      "Player-centric"
+    ]
+  }
+]
