@@ -1,0 +1,17 @@
+.audioVisualizer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+
+  .item {}
+
+  .agent {
+    background-color: var(--theme-color, #FFC0CB);
+    box-shadow: 0 0 10px var(--theme-color, #FFC0CB);
+  }
+
+  .user {
+    background-color: var(--Grey-300, #FFC0CB);
+  }
+}
