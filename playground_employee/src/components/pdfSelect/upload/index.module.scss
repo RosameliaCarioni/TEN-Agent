@@ -1,7 +1,7 @@
 .btn {
-  color: var(--theme-color, #FFC0CB);
+  color: var(--theme-color, #fff);
 
   &:hover {
-    color: var(--theme-color, #FFC0CB) !important;
+    color: var(--theme-color, #fff) !important;
   }
 }

@@ -1,10 +1,11 @@
-
 .entry {
   position: relative;
   height: 100vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
+  background: url("../../../assets/BG.avif") no-repeat center center;
+  background-size: cover;
 
   .content {
     padding: 12px;

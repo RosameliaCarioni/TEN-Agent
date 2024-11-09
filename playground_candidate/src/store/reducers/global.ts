@@ -32,7 +32,7 @@ const getInitialState = (): InitialState => {
     isAvatarLoaded: false,
     //graphName: "va_deepgram_openai_cartesia",
     //graphName: "va_deepgram_openai_fish",
-    graphName: "va_openai_v2v",
+    graphName: "agent_candidate",
 
     graphs: [],
     extensions: {},

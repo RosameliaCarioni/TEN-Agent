@@ -6,7 +6,7 @@
 
 html,
 body {
-  background-color: #ff0072;
+  background-color: #000;
   font-family: "PingFang SC";
   height: 100%;
   /* Disable user selection highlight across entire app  */
@@ -35,7 +35,7 @@ a {
 }
 
 .ant-select-selector {
-  border: 1px solid #272A2F !important;
+  border: 0 !important;
   background-color: #272A2F !important;
 }
 
@@ -50,7 +50,7 @@ a {
 
 .ant-select-item-option-selected {
   background: #272A2F !important;
-  color: var(--Grey-300, #FFC0CB) !important;
+  color: var(--Grey-300, #fff) !important;
 }
 
 

@@ -4,7 +4,7 @@ import { useAppSelector, GITHUB_URL, useSmallScreen } from "@/common"
 import Network from "./network"
 import InfoPopover from "./infoPopover"
 import StylePopover from "./stylePopover"
-import { GithubIcon, LogoIcon, InfoIcon, HeartIcon, ColorPickerIcon } from "@/components/icons"
+import { GithubIcon, LogoIcon, InfoIcon, ColorPickerIcon } from "@/components/icons"
 
 import styles from "./index.module.scss"
 
@@ -28,9 +28,7 @@ const Header = () => {
     </span>
     <InfoPopover>
       <span className={styles.content}>
-        <HeartIcon></HeartIcon>
-        <span className={styles.text}>Amie 2024&nbsp;</span>
-        <HeartIcon></HeartIcon>
+        <span className={styles.text}>Meet Nova&nbsp;</span>
       </span>
     </InfoPopover>
     <div className={styles.links}>

@@ -1,6 +1,6 @@
 .menu {
   width: 100%;
-  border: 1px solid #272A2F;
+  border: 0;
   border-radius: 4px;
   background: #0F0F11;
   overflow: hidden;
@@ -12,13 +12,13 @@
   .header {
     height: 40px;
     overflow: hidden;
-    border-bottom: 1px solid #272A2F;
+    border-bottom: 0;
     box-sizing: border-box;
 
     .menuItem {
       height: 40px;
       padding: 0 6px;
-      color: var(--Grey-300, #FFC0CB);
+      color: var(--Grey-300, #fff);
       font-size: 14px;
       font-weight: 600;
       line-height: 40px;
@@ -27,22 +27,24 @@
       color: #667085;
       background: #181A1E;
       cursor: pointer;
-      border-right: 1px solid #272A2F;
+      border-right: 0;
       box-sizing: border-box;
       overflow: hidden;
       background: #0F0F11;
     }
 
     .active {
-      color: #FFC0CB;
-      background: #181A1D;
+      color: #fff;
+      background: #ffffff10;
+      backdrop-filter: blur(8.8px);
     }
   }
 
 
   .content {
     position: relative;
-    background: #181A1D;
+    background: #ffffff10;
+    backdrop-filter: blur(8.8px);
     // header 48px
     // description 60px
     // paddingTop 16px 16px

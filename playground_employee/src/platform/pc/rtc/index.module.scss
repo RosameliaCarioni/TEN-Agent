@@ -6,8 +6,9 @@
   flex-shrink: 0;
   align-self: stretch;
   border-radius: 8px;
-  border: 1px solid #272A2F;
-  background: #181A1D;
+  border: 0;
+  background: #ffffff10;
+  backdrop-filter: blur(8.8px);
   box-sizing: border-box;
 
   .header {
@@ -16,14 +17,14 @@
     padding: 0px 16px;
     align-items: center;
     align-self: stretch;
-    border-bottom: 1px solid #272A2F;
+    border-bottom: 0;
 
     .text {
       flex: 1 1 auto;
       font-weight: 600;
       line-height: 150%;
       letter-spacing: 0.449px;
-      color: var(--Grey-300, #FFC0CB);
+      color: var(--Grey-300, #fff);
     }
 
     .voiceSelect {
@@ -39,10 +40,10 @@
     align-items: center;
     gap: 12px;
     align-self: stretch;
-    border-top: 1px solid #272A2F;
+    border-top: 0;
 
     .title {
-      color: var(--Grey-300, #FFC0CB);
+      color: var(--Grey-300, #fff);
       font-size: 24px;
       font-weight: 600;
       line-height: 150%;

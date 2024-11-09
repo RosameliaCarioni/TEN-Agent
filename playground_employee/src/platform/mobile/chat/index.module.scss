@@ -4,7 +4,8 @@
   flex-direction: column;
   align-items: flex-start;
   align-self: stretch;
-  background: #181A1D;
+  background: #ffffff10;
+  backdrop-filter: blur(8.8px);
   overflow: hidden;
   padding: 8px;
 
@@ -13,13 +14,13 @@
     flex-direction: column;
     align-items: stretch;
     row-gap: 10px;
-    border-bottom: 1px solid #272A2F;
+    border-bottom: 0;
     width: 100%;
 
 
     .text {
       margin-left: 4px;
-      color: var(--Grey-300, #FFC0CB);
+      color: var(--Grey-300, #fff);
       font-size: 14px;
       font-weight: 600;
       height: 40px;
@@ -70,10 +71,10 @@
 
 
   .btn {
-    color: var(--theme-color, #FFC0CB);
+    color: var(--theme-color, #fff);
 
     &:hover {
-      color: var(--theme-color, #FFC0CB) !important;
+      color: var(--theme-color, #fff) !important;
     }
   }
 }

@@ -7,11 +7,11 @@
   .item {}
 
   .agent {
-    background-color: var(--theme-color, #FFC0CB);
-    box-shadow: 0 0 10px var(--theme-color, #FFC0CB);
+    background-color: var(--theme-color, #fff);
+    box-shadow: 0 0 10px var(--theme-color, #fff);
   }
 
   .user {
-    background-color: var(--Grey-300, #FFC0CB);
+    background-color: var(--Grey-300, #fff);
   }
 }
