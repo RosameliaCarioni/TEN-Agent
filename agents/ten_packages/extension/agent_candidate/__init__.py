@@ -8,4 +8,4 @@
 from . import addon
 from .log import logger
 
-logger.info("openai_v2v_python extension loaded")
+logger.info("agent_candidate extension loaded")

@@ -7,7 +7,7 @@
 #
 import logging
 
-logger = logging.getLogger("employee")
+logger = logging.getLogger("agent_candidate")
 logger.setLevel(logging.INFO)
 
 formatter_str = (

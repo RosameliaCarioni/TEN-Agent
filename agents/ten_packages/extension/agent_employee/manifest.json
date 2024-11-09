@@ -1,6 +1,6 @@
 {
   "type": "extension",
-  "name": "employee",
+  "name": "agent_employee",
   "version": "0.1.0",
   "dependencies": [
     {

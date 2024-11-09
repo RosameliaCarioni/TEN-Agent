@@ -1,4 +1,4 @@
-# openai_v2v_python
+# agent_employee
 
 An extension for integrating OpenAI's Next Generation of **Multimodal** AI into your application, providing configurable AI-driven features such as conversational agents, task automation, and tool integration.
 

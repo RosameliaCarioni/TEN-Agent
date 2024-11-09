@@ -1,6 +1,6 @@
 {
   "type": "extension",
-  "name": "openai_v2v_python",
+  "name": "agent_candidate",
   "version": "0.1.0",
   "dependencies": [
     {

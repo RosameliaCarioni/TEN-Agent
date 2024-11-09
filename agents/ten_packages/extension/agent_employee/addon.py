@@ -12,7 +12,7 @@ from ten import (
 )
 
 
-@register_addon_as_extension("openai_v2v_python")
+@register_addon_as_extension("agent_employee")
 class OpenAIV2VExtensionAddon(Addon):
 
     def on_create_instance(self, ten_env: TenEnv, name: str, context) -> None:

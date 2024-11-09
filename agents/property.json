@@ -2,7 +2,7 @@
   "_ten": {
     "predefined_graphs": [
       {
-        "name": "employee",
+        "name": "agent_employee",
         "auto_start": true,
         "nodes": [
           {
@@ -24,8 +24,8 @@
           },
           {
             "type": "extension",
-            "name": "employee",
-            "addon": "employee",
+            "name": "agent_employee",
+            "addon": "agent_employee",
             "extension_group": "llm",
             "property": {
               "api_key": "${env:OPENAI_REALTIME_API_KEY}",
@@ -80,7 +80,7 @@
                 "dest": [
                   {
                     "extension_group": "llm",
-                    "extension": "employee"
+                    "extension": "agent_employee"
                   }
                 ]
               }
@@ -95,7 +95,7 @@
                 "dest": [
                   {
                     "extension_group": "llm",
-                    "extension": "employee"
+                    "extension": "agent_employee"
                   }
                 ]
               }
@@ -110,7 +110,7 @@
                 "dest": [
                   {
                     "extension_group": "llm",
-                    "extension": "employee"
+                    "extension": "agent_employee"
                   }
                 ]
               }
@@ -118,7 +118,7 @@
           },
           {
             "extension_group": "llm",
-            "extension": "employee",
+            "extension": "agent_employee",
             "cmd": [
               {
                 "name": "flush",
@@ -170,9 +170,8 @@
           }
         ]
       },
-      
       {
-        "name": "va_openai_v2v",
+        "name": "agent_candidate",
         "auto_start": true,
         "nodes": [
           {
@@ -194,8 +193,8 @@
           },
           {
             "type": "extension",
-            "name": "openai_v2v_python",
-            "addon": "openai_v2v_python",
+            "name": "agent_candidate",
+            "addon": "agent_candidate",
             "extension_group": "llm",
             "property": {
               "api_key": "${env:OPENAI_REALTIME_API_KEY}",
@@ -250,7 +249,7 @@
                 "dest": [
                   {
                     "extension_group": "llm",
-                    "extension": "openai_v2v_python"
+                    "extension": "agent_candidate"
                   }
                 ]
               }
@@ -265,7 +264,7 @@
                 "dest": [
                   {
                     "extension_group": "llm",
-                    "extension": "openai_v2v_python"
+                    "extension": "agent_candidate"
                   }
                 ]
               }
@@ -280,7 +279,7 @@
                 "dest": [
                   {
                     "extension_group": "llm",
-                    "extension": "openai_v2v_python"
+                    "extension": "agent_candidate"
                   }
                 ]
               }
@@ -288,7 +287,7 @@
           },
           {
             "extension_group": "llm",
-            "extension": "openai_v2v_python",
+            "extension": "agent_candidate",
             "cmd": [
               {
                 "name": "flush",

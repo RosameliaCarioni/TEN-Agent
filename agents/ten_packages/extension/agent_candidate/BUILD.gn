@@ -7,7 +7,7 @@
 #
 import("//build/feature/ten_package.gni")
 
-ten_package("openai_v2v_python") {
+ten_package("agent_candidate") {
   package_kind = "extension"
 
   resources = [

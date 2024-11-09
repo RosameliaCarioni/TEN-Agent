@@ -7,7 +7,7 @@
 #
 import logging
 
-logger = logging.getLogger("openai_v2v_python")
+logger = logging.getLogger("agent_employee")
 logger.setLevel(logging.INFO)
 
 formatter_str = (
