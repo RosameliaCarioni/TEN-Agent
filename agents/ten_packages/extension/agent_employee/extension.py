@@ -732,11 +732,4 @@ class OpenAIV2VExtension(Extension):
             logger.exception("Failed to handle tool output")
 
     def _greeting_text(self) -> str:
-        text = "Hi, there."
-        if self.config.language == "zh-CN":
-            text = "你好。"
-        elif self.config.language == "ja-JP":
-            text = "こんにちは"
-        elif self.config.language == "ko-KR":
-            text = "안녕하세요"
-        return text
+        return self.greeting
