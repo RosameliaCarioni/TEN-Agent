@@ -37,6 +37,7 @@ a {
 .ant-select-selector {
   border: 0 !important;
   background-color: #272A2F !important;
+  display: none;
 }
 
 .ant-select-dropdown {

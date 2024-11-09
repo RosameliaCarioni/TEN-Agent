@@ -133,9 +133,9 @@ const Description = () => {
     <span className={styles.left}>
     </span>
     <span className={styles.right}>
-      <Select className={styles.graphName}
+      {/* <Select className={styles.graphName}
         disabled={agentConnected} options={GRAPH_OPTIONS}
-        value={graphName} onChange={onGraphNameChange}></Select>
+        value={graphName} onChange={onGraphNameChange}></Select> */}
 
       {/*
         <Select className={styles.languageSelect}
