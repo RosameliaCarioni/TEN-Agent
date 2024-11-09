@@ -739,14 +739,7 @@ class OpenAIV2VExtension(Extension):
             logger.exception("Failed to handle tool output")
 
     def _greeting_text(self) -> str:
-        text = "Hi, there."
-        if self.config.language == "zh-CN":
-            text = "你好。"
-        elif self.config.language == "ja-JP":
-            text = "こんにちは"
-        elif self.config.language == "ko-KR":
-            text = "안녕하세요"
-        return text
+        return self.greeting
     
     def save_to_file(self, user_message: str, role: str, file_path="conversation_history.txt"):
         # Ensure the file exists; create it if it doesn't - will create file in agents/
@@ -760,4 +753,3 @@ class OpenAIV2VExtension(Extension):
             file.write(f"User: {user_message}\n")
             file.write(f"Role: {role}\n")
             file.write("-" * 40 + "\n")
-        return self.greeting
