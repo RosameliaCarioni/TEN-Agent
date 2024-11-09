@@ -11,6 +11,7 @@ import base64
 from datetime import datetime
 from typing import Awaitable
 from functools import partial
+import os 
 
 from ten import (
     AudioFrame,
@@ -649,6 +650,27 @@ class OpenAIV2VExtension(Extension):
             except:
                 logger.exception(
                     f"Error send text data {role}: {sentence} {is_final}")
+                
+            # Construct file paths relative to the /resources folder one level up
+            parent_dir = os.path.abspath(os.path.join(os.getcwd(), ".."))
+            resources_dir = os.path.join(parent_dir, "resources")
+            
+            candidate_cv_path = os.path.join(resources_dir, "candidate_cv.json")
+            candidate_conversation_path = os.path.join(resources_dir, "candidate_conversation.json")
+            companies_data_path = os.path.join(resources_dir, "companies_data.json")
+
+            # Schedule the async method
+            try:
+                if not self.loop.is_running():
+                    logger.error("Event loop not running!")
+                else:
+                    future = asyncio.run_coroutine_threadsafe(
+                        self.summarize_and_match_files(candidate_cv_path, candidate_conversation_path, companies_data_path), 
+                        self.loop
+                    )
+                    future.add_done_callback(self._summarize_done)
+            except Exception as ex:
+                logger.error(f"Failed to run async function in sync context: {ex}")
 
         stream_id = self.remote_stream_id if role == Role.User else 0
         try:
@@ -660,6 +682,14 @@ class OpenAIV2VExtension(Extension):
                 send_data(ten_env, content, stream_id, role, is_final)
         except:
             logger.exception(f"Error send text data {role}: {content} {is_final}")
+
+    def _summarize_done(self, future):
+        try:
+            result = future.result()
+            logger.info(f"Summarization Result: {result}")
+        except Exception as ex:
+            logger.error(f"Error in summarize and match task: {ex}")
+
 
     def _flush(self, ten_env: TenEnv) -> None:
         try:
@@ -733,3 +763,50 @@ class OpenAIV2VExtension(Extension):
 
     def _greeting_text(self) -> str:
         return self.greeting
+    
+############## PERFORM MATCHING ##############
+   
+    def read_file(self, file_path):
+        try:
+            with open(file_path, "r") as file:
+                content = file.read()
+                logger.info(f"File {file_path} successfully read")
+                return content
+        except FileNotFoundError:
+            logger.error(f"File not found: {file_path}")
+            return ""
+        except Exception as ex:
+            logger.error(f"Error reading file {file_path}: {ex}")
+            return ""
+
+
+    async def summarize_and_match_files(self, candidate_cv, candidate_conversation, companies_data):
+        cv_content = self.read_file(candidate_cv)
+        conversation_content = self.read_file(candidate_conversation)
+        companies_content = self.read_file(companies_data)
+
+        if not cv_content or not conversation_content or not companies_content:
+            logger.warning("One or both files are empty or not found.")
+            return None
+
+        # Prepare the LLM prompt for summarization and matching
+        prompt = f"""
+        You are provided with three documents A candidate CV and content about that person and available offers from companies. 
+        Candidate CV:
+        {cv_content}
+
+        Convesation Content:
+        {conversation_content}
+
+        Companies Content:
+        {companies_content}
+
+        Merge the information about the candidate and match the person to the best matches in the companies. Give the top three results in a structured format.
+        """
+        logger.info("GOT HERE")
+        # Send the prompt to the LLM
+        response = await self.conn.send_request(ItemCreate(item=UserMessageItemParam(content=[{"type": ContentType.InputText, "text": prompt}])))
+        summary_match_result = await self.conn.send_request(ResponseCreate())  # Get LLM response
+        logger.info(f"MATCHING DONE WITH RESULT: ",{summary_match_result})
+        logger.info("MATCHING DONE WITH RESULT 2: ",summary_match_result)
+        return summary_match_result["content"]  # Return summarized and matched content

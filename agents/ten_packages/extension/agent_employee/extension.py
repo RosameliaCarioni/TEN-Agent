@@ -741,8 +741,15 @@ class OpenAIV2VExtension(Extension):
     def _greeting_text(self) -> str:
         return self.greeting
     
-    def save_to_file(self, user_message: str, role: str, file_path="conversation_history.txt"):
+    def save_to_file(self, user_message: str, role: str, file_name="employee_conversation.txt"):
         # Ensure the file exists; create it if it doesn't - will create file in agents/
+        # Define the /resources directory one level up from the current working directory
+        parent_dir = os.path.abspath(os.path.join(os.getcwd(), ".."))
+        resources_dir = os.path.join(parent_dir, "resources")
+        # Ensure the directory exists
+        os.makedirs(resources_dir, exist_ok=True)
+        # Set the full file path
+        file_path = os.path.join(resources_dir, file_name)
         if not os.path.exists(file_path):
             with open(file_path, "w") as file:  # Create the file
                 file.write("Chatbot Conversation History\n")

@@ -1,0 +1,144 @@
+Chatbot Conversation History
+========================================
+
+User: 
+Role: user
+----------------------------------------
+User: Great to have you here!
+Role: assistant
+----------------------------------------
+User: That's what you're checking. That's what I'm checking.
+
+Role: user
+----------------------------------------
+User:  Let's start with something positive.
+Role: assistant
+----------------------------------------
+User:  What do you enjoy most about your job?
+Role: assistant
+----------------------------------------
+User:  Is there a particular aspect of your role or a recent project that you found fulfilling?
+Role: assistant
+----------------------------------------
+User: 
+Role: assistant
+----------------------------------------
+User: It sounds like you're in a busy environment!
+Role: assistant
+----------------------------------------
+User:  Let's talk about your work.
+Role: assistant
+----------------------------------------
+User: What else? Um... What can Melly do?
+
+Role: user
+----------------------------------------
+User:  How are things going for you in your role?
+Role: assistant
+----------------------------------------
+User:  What do you enjoy most about your job,
+Role: assistant
+----------------------------------------
+User:  and are there any challenges you're facing?
+Role: assistant
+----------------------------------------
+User: 
+Role: assistant
+----------------------------------------
+User: Hi there!
+Role: assistant
+----------------------------------------
+User:  Thanks[interrupted]
+Role: assistant
+----------------------------------------
+User: It seems like you might[interrupted]
+Role: assistant
+----------------------------------------
+User: 
+
+Role: user
+----------------------------------------
+User: No[interrupted]
+Role: assistant
+----------------------------------------
+User: Oh
+
+Role: user
+----------------------------------------
+User: Thank you.
+
+Role: user
+----------------------------------------
+User: Дякую за перегляд!
+
+Role: user
+----------------------------------------
+User: Sounds like you might have a lot going on.
+Role: assistant
+----------------------------------------
+User:  Whenever you're ready,
+Role: assistant
+----------------------------------------
+User:  feel free to share more about what's on your mind regarding work.
+Role: assistant
+----------------------------------------
+User:  I'm here to listen!
+Role: assistant
+----------------------------------------
+User: 
+Role: assistant
+----------------------------------------
+User: 
+
+Role: user
+----------------------------------------
+User: 
+Role: user
+----------------------------------------
+User: 
+
+Role: user
+----------------------------------------
+User: 
+
+Role: user
+----------------------------------------
+User: 
+Role: user
+----------------------------------------
+User: 
+
+Role: user
+----------------------------------------
+User: Hi there!
+Role: assistant
+----------------------------------------
+User:  I'm here to chat if you're ready.
+Role: assistant
+----------------------------------------
+User:  How has your day been[interrupted]
+Role: assistant
+----------------------------------------
+User: Thank you. 
+
+Role: user
+----------------------------------------
+User: Hello.
+
+Role: user
+----------------------------------------
+User: It seems like we might be having some trouble connecting.
+Role: assistant
+----------------------------------------
+User:  If you're trying to share something about your work experience or need help,
+Role: assistant
+----------------------------------------
+User:  can you please try again?
+Role: assistant
+----------------------------------------
+User:  I'm here to listen and assist!
+Role: assistant
+----------------------------------------
+User: 
+Role: assistant
+----------------------------------------
