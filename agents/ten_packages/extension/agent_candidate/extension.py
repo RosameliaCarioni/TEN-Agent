@@ -657,6 +657,7 @@ class OpenAIV2VExtension(Extension):
             
             candidate_cv_path = os.path.join(resources_dir, "candidate_cv.json")
             candidate_conversation_path = os.path.join(resources_dir, "candidate_conversation.json")
+            employee_feedback_data = os.path.join(resources_dir, "employee_feedback_text.json")
             companies_data_path = os.path.join(resources_dir, "companies_data.json")
 
             # Schedule the async method
@@ -665,7 +666,7 @@ class OpenAIV2VExtension(Extension):
                     logger.error("Event loop not running!")
                 else:
                     future = asyncio.run_coroutine_threadsafe(
-                        self.summarize_and_match_files(candidate_cv_path, candidate_conversation_path, companies_data_path), 
+                        self.summarize_and_match_files(candidate_cv_path, candidate_conversation_path, employee_feedback_data, companies_data_path), 
                         self.loop
                     )
                     future.add_done_callback(self._summarize_done)
@@ -780,28 +781,46 @@ class OpenAIV2VExtension(Extension):
             return ""
 
 
-    async def summarize_and_match_files(self, candidate_cv, candidate_conversation, companies_data):
+    async def summarize_and_match_files(self, candidate_cv, candidate_conversation, employee_feedback_data, companies_data):
         cv_content = self.read_file(candidate_cv)
         conversation_content = self.read_file(candidate_conversation)
+        employee_feedback = self.read_file(employee_feedback_data)
         companies_content = self.read_file(companies_data)
+
 
         if not cv_content or not conversation_content or not companies_content:
             logger.warning("One or both files are empty or not found.")
             return None
 
         # Prepare the LLM prompt for summarization and matching
-        prompt = f"""
-        You are provided with three documents A candidate CV and content about that person and available offers from companies. 
-        Candidate CV:
-        {cv_content}
+        prompt = f"""        
+            You are provided with four types of documents:
 
-        Convesation Content:
-        {conversation_content}
+            1. Candidate CV: Contains details about a person seeking a job, including their skills, experience, and qualifications.
+            2. Candidate Conversation Summary: Summarizes interactions or discussions with the candidate, providing additional context about their preferences, goals, and personality.
+            3. Employee Feedback: Includes feedback from current employees about specific companies, covering aspects such as work culture, management, and overall satisfaction.
+            4. Company Information: Contains detailed data about various companies, including their industry, values, job openings, and growth opportunities.
 
-        Companies Content:
-        {companies_content}
+            **Your Task:**
+            Analyze and merge the information from these four sources to identify the top three companies that best match the candidate's profile. Consider the candidate's skills, preferences, and career goals, alongside the company culture and job opportunities.
 
-        Merge the information about the candidate and match the person to the best matches in the companies. Give the top three results in a structured format.
+            **Output Format:**
+            Provide the top seven company matches in a structured format, including:
+            - Company Name
+            - Key Reasons for the Match (e.g., aligned skills, cultural fit, etc.)
+            - Relevant Job Opportunities or Roles
+
+            Candidate CV:
+            {cv_content}
+
+            Conversation Summary:
+            {conversation_content}
+
+            Employee Feedback:
+            {employee_feedback}
+
+            Company Information:
+            {companies_content}
         """
         logger.info("GOT HERE")
         # Send the prompt to the LLM
