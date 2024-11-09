@@ -11,6 +11,7 @@ import base64
 from datetime import datetime
 from typing import Awaitable
 from functools import partial
+import os
 
 from ten import (
     AudioFrame,
@@ -202,7 +203,12 @@ class OpenAIV2VExtension(Extension):
 
     async def _send_text_item(self, text: str):
         await self.conn.send_request(ItemCreate(item=UserMessageItemParam(content=[{"type": ContentType.InputText, "text": text}])))
-        await self.conn.send_request(ResponseCreate())
+        response = await self.conn.send_request(ResponseCreate())  # Capture assistant response
+        assistant_response = response["content"]  # Extract the response text
+
+        self.save_to_file(text, assistant_response)  # Save to file
+
+
 
     def on_config_changed(self) -> None:
         # update session again
@@ -646,6 +652,7 @@ class OpenAIV2VExtension(Extension):
                 logger.info(
                     f"send transcript text [{sentence}] stream_id {stream_id} is_final {is_final} end_of_segment {is_final} role {role}")
                 ten_env.send_data(d)
+                self.save_to_file(sentence, role)
             except:
                 logger.exception(
                     f"Error send text data {role}: {sentence} {is_final}")
@@ -740,3 +747,16 @@ class OpenAIV2VExtension(Extension):
         elif self.config.language == "ko-KR":
             text = "안녕하세요"
         return text
+    
+    def save_to_file(self, user_message: str, role: str, file_path="conversation_history.txt"):
+        # Ensure the file exists; create it if it doesn't - will create file in agents/
+        if not os.path.exists(file_path):
+            with open(file_path, "w") as file:  # Create the file
+                file.write("Chatbot Conversation History\n")
+                file.write("=" * 40 + "\n\n")  # Header for the new file
+
+        # Append the new conversation to the file
+        with open(file_path, "a") as file:
+            file.write(f"User: {user_message}\n")
+            file.write(f"Role: {role}\n")
+            file.write("-" * 40 + "\n")
