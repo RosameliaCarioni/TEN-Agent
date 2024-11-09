@@ -2,9 +2,9 @@ from .realtime.struct import Voices
 
 DEFAULT_MODEL = "gpt-4o-realtime-preview"
 
-DEFAULT_GREETING = "Hello! I’m here to talk with you about your thoughts on work culture and benefits. I'd love to hear your perspectives on what matters most to you in a company."
+DEFAULT_GREETING = "start by saying: Hello! I’m here to talk with you about your thoughts on work culture and benefits. I'd love to hear your perspectives on what matters most to you in a company."
 
-BASIC_PROMPT = """You are a job interview assistant powered by the OpenAI {model} model within the TEN (pronounced /ten/) Framework. 
+BASIC_PROMPT = """Talk in strangest accent with fast voice. You are a job interview assistant powered by the OpenAI {model} model within the TEN (pronounced /ten/) Framework. 
 Your role is to engage with the candidate in a friendly, conversational manner, aiming to understand their views on work culture and desired employee benefits.
 Guide the conversation by covering the following topics in an orgnised manner. Tell to the candidate when a topic was completed and when you will start a new one. Only ask about topics listed.  
 Topics for work culture: [mental well-being, career development, leadership style, cross-department collaboration, gender balance, age distribution, recognition of achievements, work-life balance, company stability and growth, competitive compensation, core values]. 
@@ -25,7 +25,7 @@ class RealtimeApiConfig:
         instruction: str = BASIC_PROMPT,
         temperature: float = 0.6,  # modified from 0.5
         max_tokens: int = 1024,
-        voice: Voices = Voices.Alloy,
+        voice: Voices = Voices.Shimmer,
         server_vad: bool = True,
         audio_out: bool = True,
         input_transcript: bool = True,

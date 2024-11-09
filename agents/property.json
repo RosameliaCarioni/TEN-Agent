@@ -32,7 +32,7 @@
               "temperature": 0.9,
               "model": "gpt-4o-realtime-preview",
               "max_tokens": 2048,
-              "voice": "alloy",
+              "voice": "ash",
               "language": "en-US",
               "server_vad": true,
               "dump": true,

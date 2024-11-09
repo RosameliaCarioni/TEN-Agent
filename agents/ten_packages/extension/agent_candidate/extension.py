@@ -52,7 +52,7 @@ PROPERTY_DUMP = "dump"
 PROPERTY_GREETING = "greeting"
 PROPERTY_HISTORY = "history"
 
-DEFAULT_VOICE = Voices.Alloy
+DEFAULT_VOICE = Voices.Shimmer
 
 CMD_TOOL_REGISTER = "tool_register"
 CMD_TOOL_CALL = "tool_call"

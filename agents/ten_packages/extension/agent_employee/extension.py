@@ -254,6 +254,9 @@ class OpenAIV2VExtension(Extension):
                                 logger.info(f"after append retrieve: {len(self.retrieved)}")
 
                             text = self._greeting_text()
+
+                            #logger.info(f"BWBWBW: {text}")
+                            logger.info(f"BWBWBW: {str(text)}")
                             await self.conn.send_request(ItemCreate(item=UserMessageItemParam(content=[{"type": ContentType.InputText, "text": text}])))
                             await self.conn.send_request(ResponseCreate())
 
