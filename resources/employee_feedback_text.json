@@ -1,0 +1,293 @@
+[
+    {
+        "fullName": "Peter Walter",
+        "date": "2023-08-12",
+        "jobTitle": "Senior Software Engineer",
+        "company": "Nordic Tech Solutions",
+        "workCultureFeedback": {
+            "mentalWellBeing": "Mental health days offered, but workload can be overwhelming.",
+            "careerDevelopment": "Growth opportunities exist, but mentorship is limited.",
+            "leadershipStyle": "Supportive, but often top-down decisions.",
+            "crossDepartmentCollaboration": "Cross-department projects encouraged, helps broaden knowledge.",
+            "recognitionOfAchievements": "Achievements acknowledged but informal recognition."
+        },
+        "benefitsFeedback": {
+            "paidSickLeave": "Flexible and supportive when needed.",
+            "healthInsurance": "Comprehensive and covers diverse services.",
+            "pensionPlans": "Standard but could be more competitive.",
+            "remoteWorkOptions": "Hybrid model available, but full remote is limited.",
+            "fitnessProgram": "Gym membership provided, limited other wellness options."
+        },
+        "generalFeedback": {
+            "jobSatisfaction": "Satisfied overall but needs more structured career planning.",
+            "improvementSuggestions": "Introduce structured mentorship and regular feedback sessions.",
+            "additionalComments": "Team environment is positive; sustainability focus appreciated."
+        }
+    },
+    {
+        "fullName": "Liisa Niemi",
+        "date": "2023-07-21",
+        "jobTitle": "Product Manager",
+        "company": "Nordic Tech Solutions",
+        "workCultureFeedback": {
+            "workLifeBalance": "Flexible hours help, but project deadlines can cause stress.",
+            "careerDevelopment": "Career paths are clear, but mentorship is lacking.",
+            "leadershipStyle": "Leadership is supportive, though formal programs are rare.",
+            "genderBalance": "Inclusivity is actively promoted with a strong gender balance."
+        },
+        "benefitsFeedback": {
+            "remoteWorkOptions": "Hybrid work model allows flexibility, but fully remote isn’t supported.",
+            "paidSickLeave": "Policy is accommodating and fair.",
+            "healthInsurance": "Covers essential services, could expand wellness options.",
+            "fitnessProgram": "Gym membership available, but lacks variety."
+        },
+        "generalFeedback": {
+            "jobSatisfaction": "Satisfied but would like more career growth opportunities.",
+            "improvementSuggestions": "Implement mentorship programs and more career clarity.",
+            "additionalComments": "Appreciate the company’s commitment to innovation."
+        }
+    },
+    {
+        "fullName": "Mika Laaksonen",
+        "date": "2023-09-10",
+        "jobTitle": "DevOps Engineer",
+        "company": "Nordic Tech Solutions",
+        "workCultureFeedback": {
+            "mentalWellBeing": "Good mental health support, but workload can be high.",
+            "careerDevelopment": "Limited mentorship; mostly self-driven growth.",
+            "leadershipStyle": "Leadership encourages transparency but lacks collaboration at times.",
+            "crossDepartmentCollaboration": "Frequent collaboration broadens knowledge base."
+        },
+        "benefitsFeedback": {
+            "flexibleWorkingHours": "Very helpful for balancing workload.",
+            "paidSickLeave": "Policy is supportive and flexible when needed.",
+            "healthInsurance": "Comprehensive with good coverage.",
+            "pensionPlans": "Competitive but could improve with more flexibility."
+        },
+        "generalFeedback": {
+            "jobSatisfaction": "Enjoy the collaborative environment; workload can be intense.",
+            "improvementSuggestions": "Introduce structured support for mental health.",
+            "additionalComments": "Appreciate team collaboration and growth opportunities."
+        }
+    },
+    {
+        "fullName": "Anni Koskinen",
+        "date": "2023-06-18",
+        "jobTitle": "UI/UX Designer",
+        "company": "Nordic Tech Solutions",
+        "workCultureFeedback": {
+            "mentalWellBeing": "Good emphasis on well-being, but project loads can add stress.",
+            "careerDevelopment": "Career development is informal; workshops would help.",
+            "leadershipStyle": "Leadership is approachable, though sometimes disconnected from project specifics.",
+            "recognitionOfAchievements": "Informal recognition common, but formal awards are rare."
+        },
+        "benefitsFeedback": {
+            "remoteWorkOptions": "Flexible remote options available, with some restrictions.",
+            "flexibleWorkingHours": "Hours are flexible, which helps with work-life balance.",
+            "healthInsurance": "Great coverage, but lacks wellness add-ons.",
+            "fitnessProgram": "Basic gym options; could include wellness classes."
+        },
+        "generalFeedback": {
+            "jobSatisfaction": "Good overall, though more structured growth paths are needed.",
+            "improvementSuggestions": "Provide clear advancement paths and structured training.",
+            "additionalComments": "Team is collaborative and supportive."
+        }
+    },
+    {
+        "fullName": "Kalle Virtanen",
+        "date": "2023-05-30",
+        "jobTitle": "Backend Developer",
+        "company": "Nordic Tech Solutions",
+        "workCultureFeedback": {
+            "mentalWellBeing": "Workplace promotes mental well-being, but project demands are high.",
+            "careerDevelopment": "Limited mentoring; mostly on-the-job learning.",
+            "leadershipStyle": "Supportive leadership but could engage more with team feedback.",
+            "recognitionOfAchievements": "Achievements recognized informally, not publicly."
+        },
+        "benefitsFeedback": {
+            "remoteWorkOptions": "Flexible remote work but can be restrictive on specific days.",
+            "childcareSupport": "None provided, which can be challenging for parents.",
+            "pensionPlans": "Decent plan, though standard for the industry.",
+            "healthInsurance": "Comprehensive coverage with few wellness extras."
+        },
+        "generalFeedback": {
+            "jobSatisfaction": "Role is fulfilling, though workload balance is needed.",
+            "improvementSuggestions": "More structured career paths and mentorship programs.",
+            "additionalComments": "Work culture is positive, and innovation is valued."
+        }
+    },
+    {
+        "fullName": "Eric Ericsson",
+        "date": "2023-08-14",
+        "jobTitle": "Financial Analyst",
+        "company": "Scandi Finance Group",
+        "workCultureFeedback": {
+            "mentalWellBeing": "Supportive, but lacks structured well-being programs.",
+            "careerDevelopment": "Limited progression options, mostly self-driven.",
+            "leadershipStyle": "Task-oriented leadership, supportive when needed.",
+            "crossDepartmentCollaboration": "Mainly limited to finance department."
+        },
+        "benefitsFeedback": {
+            "paidSickLeave": "Standard policy, could be more flexible.",
+            "healthInsurance": "Basic coverage, standard in scope.",
+            "pensionPlans": "Adequate but could use additional benefits.",
+            "remoteWorkOptions": "No remote work, flexibility is limited."
+        },
+        "generalFeedback": {
+            "jobSatisfaction": "Fairly satisfied but wants flexibility and growth.",
+            "improvementSuggestions": "Introduce remote work and career growth programs.",
+            "additionalComments": "Team is supportive but culture feels traditional."
+        }
+    },
+    {
+        "fullName": "Anna Haugland",
+        "date": "2023-09-01",
+        "jobTitle": "Account Manager",
+        "company": "Scandi Finance Group",
+        "workCultureFeedback": {
+            "mentalWellBeing": "Encourages well-being but needs structured programs.",
+            "careerDevelopment": "Few advancement opportunities; mainly role-based growth.",
+            "leadershipStyle": "Approachable, but sometimes rigid.",
+            "crossDepartmentCollaboration": "Minimal due to departmental focus."
+        },
+        "benefitsFeedback": {
+            "paidSickLeave": "Policy is fair, but flexibility is limited.",
+            "healthInsurance": "Basic but satisfactory.",
+            "pensionPlans": "Adequate, in line with industry standards.",
+            "childcareSupport": "None, which makes it difficult for parents."
+        },
+        "generalFeedback": {
+            "jobSatisfaction": "Role is stable but lacks excitement.",
+            "improvementSuggestions": "More cross-department projects and flexible work options.",
+            "additionalComments": "Company culture is supportive but lacks energy."
+        }
+    },
+    {
+        "fullName": "Mats Lind",
+        "date": "2023-10-07",
+        "jobTitle": "Risk Analyst",
+        "company": "Scandi Finance Group",
+        "workCultureFeedback": {
+            "mentalWellBeing": "Few stress-management resources, though team is supportive.",
+            "careerDevelopment": "Growth mostly self-driven with few formal options.",
+            "leadershipStyle": "Leadership is generally task-oriented.",
+            "crossDepartmentCollaboration": "Finance-focused, minimal cross-collaboration."
+        },
+        "benefitsFeedback": {
+            "paidSickLeave": "Adequate, but more flexibility would help.",
+            "healthInsurance": "Covers basic services only.",
+            "pensionPlans": "Basic with little additional perks.",
+            "remoteWorkOptions": "Strictly in-office, no remote options."
+        },
+        "generalFeedback": {
+            "jobSatisfaction": "Content with role but would prefer remote options.",
+            "improvementSuggestions": "Introduce more growth opportunities and remote work.",
+            "additionalComments": "Supportive team but lacking in work-life balance options."
+        }
+    },
+    {
+        "fullName": "Amanda Capri",
+        "date": "2023-05-15",
+        "jobTitle": "Project Manager",
+        "company": "Scandinavian Consulting Group",
+        "workCultureFeedback": {
+            "mentalWellBeing": "The company actively supports mental health through wellness workshops and counseling resources, although project demands can sometimes become overwhelming.",
+            "careerDevelopment": "There are great opportunities for training, but career progression feels slow without a clear path.",
+            "leadershipStyle": "Leadership is approachable, with an open-door policy, but the lack of a long-term strategy is noticeable at times.",
+            "crossDepartmentCollaboration": "Cross-department collaboration is encouraged, which is helpful, although competing priorities can create roadblocks.",
+            "recognitionOfAchievements": "Achievements are regularly acknowledged, boosting morale.",
+            "workLifeBalance": "Work-life balance is valued, with flexible hours and occasional remote work options, though deadlines can push hours longer."
+        },
+        "benefitsFeedback": {
+            "paidSickLeave": "The sick leave policy is supportive, and the company is understanding of personal health needs.",
+            "healthInsurance": "The health insurance covers basic needs but could include more wellness-oriented options.",
+            "pensionPlans": "Pension plans are standard, which aligns with industry norms.",
+            "remoteWorkOptions": "A hybrid model is in place, with two days a week for remote work.",
+            "fitnessProgram": "Discounted gym memberships are offered, but on-site wellness options would be a nice addition."
+        }
+    },
+    {
+        "fullName": "Lars Johansen",
+        "date": "2023-06-20",
+        "jobTitle": "Senior Consultant",
+        "company": "Scandinavian Consulting Group",
+        "workCultureFeedback": {
+            "mentalWellBeing": "Good support for mental health with accessible resources, though high workload can be challenging.",
+            "careerDevelopment": "Ample training opportunities, but a more defined growth structure is needed for consultants.",
+            "leadershipStyle": "Leadership is generally open to feedback, but can sometimes be too risk-averse.",
+            "crossDepartmentCollaboration": "Cross-department collaboration is beneficial but needs better coordination.",
+            "recognitionOfAchievements": "Recognition is inconsistent and could use a formal program to enhance morale.",
+            "workLifeBalance": "Flexible hours help with balance, but high client demands sometimes lead to long hours."
+        },
+        "benefitsFeedback": {
+            "paidSickLeave": "Good support during sick leave, with minimal paperwork required.",
+            "healthInsurance": "Health insurance is basic; more options would be appreciated.",
+            "pensionPlans": "Standard pension plan without added incentives.",
+            "remoteWorkOptions": "Hybrid work is allowed, but full remote options are limited.",
+            "fitnessProgram": "Discounts on gym memberships; more wellness initiatives would be appreciated."
+        }
+    },
+    {
+        "fullName": "Eva Lindberg",
+        "date": "2023-07-10",
+        "jobTitle": "Marketing Specialist",
+        "company": "Scandinavian Consulting Group",
+        "workCultureFeedback": {
+            "mentalWellBeing": "Company organizes monthly wellness events which help, but could focus more on individual well-being.",
+            "careerDevelopment": "Offers periodic workshops and training, but advancement opportunities are limited in marketing roles.",
+            "leadershipStyle": "Supportive and approachable, but sometimes lacks strategic clarity.",
+            "crossDepartmentCollaboration": "Interdepartmental projects are valuable but need clearer communication channels.",
+            "recognitionOfAchievements": "Occasional recognition during team meetings, but formal acknowledgments are rare.",
+            "workLifeBalance": "Offers flexible working hours which help with managing work-life balance."
+        },
+        "benefitsFeedback": {
+            "paidSickLeave": "Paid sick leave is generous and easy to access.",
+            "healthInsurance": "Basic health coverage; expanded options for mental health would be beneficial.",
+            "pensionPlans": "Standard pension benefits, similar to most companies.",
+            "remoteWorkOptions": "Some remote work allowed, but mainly in-office for collaboration.",
+            "fitnessProgram": "Company sponsors a few wellness programs, but could provide more fitness benefits."
+        }
+    },
+    {
+        "fullName": "Henrik Olsson",
+        "date": "2023-08-05",
+        "jobTitle": "Business Analyst",
+        "company": "Scandinavian Consulting Group",
+        "workCultureFeedback": {
+            "mentalWellBeing": "Company has improved in offering mental well-being resources, but the workload remains high.",
+            "careerDevelopment": "There are opportunities for growth, but it’s mostly self-driven.",
+            "leadershipStyle": "Leadership is supportive but sometimes lacks visibility with staff.",
+            "crossDepartmentCollaboration": "Cross-department collaboration happens but could be better organized.",
+            "recognitionOfAchievements": "Recognition for achievements is sporadic and could be more structured.",
+            "workLifeBalance": "Work-life balance is fair, though certain projects require extra hours."
+        },
+        "benefitsFeedback": {
+            "paidSickLeave": "Supportive policies for sick leave, easy to manage.",
+            "healthInsurance": "Good basic health coverage, but lacks specialized care options.",
+            "pensionPlans": "Pension plan is adequate but lacks additional perks.",
+            "remoteWorkOptions": "Allowed to work remotely occasionally, but mostly expected in-office.",
+            "fitnessProgram": "Standard gym discounts, but limited wellness initiatives."
+        }
+    },
+    {
+        "fullName": "Sara Niemi",
+        "date": "2023-09-12",
+        "jobTitle": "HR Specialist",
+        "company": "Scandinavian Consulting Group",
+        "workCultureFeedback": {
+            "mentalWellBeing": "Strong focus on mental health with several available resources, though improvements in workload distribution could help.",
+            "careerDevelopment": "Professional development is supported, though there's no clear path for promotion.",
+            "leadershipStyle": "Management is supportive and values employee input.",
+            "crossDepartmentCollaboration": "Cross-departmental efforts are encouraged but need more streamlined processes.",
+            "recognitionOfAchievements": "Achievements are recognized, especially in larger meetings.",
+            "workLifeBalance": "Offers flexible schedules, which really supports a good work-life balance."
+        },
+        "benefitsFeedback": {
+            "paidSickLeave": "Sick leave policies are accommodating and easy to navigate.",
+            "healthInsurance": "Health insurance covers essentials, but some wellness care would be beneficial.",
+            "pensionPlans": "The pension plan is adequate, but doesn’t stand out compared to competitors.",
+            "remoteWorkOptions": "Remote work is allowed on a limited basis, depending on role needs.",
+            "fitnessProgram": "Offers gym memberships at a discount, which is a good benefit."
+        }
+    }
+]

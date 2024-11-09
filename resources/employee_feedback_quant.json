@@ -1,0 +1,307 @@
+[
+    {
+        "fullName": "Peter Walter",
+        "date": "2023-08-12",
+        "jobTitle": "Senior Software Engineer",
+        "company": "Nordic Tech Solutions",
+        "workCultureFeedbackScores": {
+            "mentalWellBeing": 3,
+            "careerDevelopment": 2,
+            "leadershipStyle": 3,
+            "crossDepartmentCollaboration": 4,
+            "recognitionOfAchievements": 3,
+            "workLifeBalance": 4,
+            "companyStabilityAndGrowth": 5,
+            "competitiveCompensation": 3
+        },
+        "benefitsFeedbackScores": {
+            "paidSickLeave": 4,
+            "healthInsurance": 5,
+            "pensionPlans": 3,
+            "remoteWorkOptions": 3,
+            "childcareSupport": 1,
+            "flexibleWorkingHours": 4,
+            "fitnessProgram": 3
+        }
+    },
+    {
+        "fullName": "Liisa Niemi",
+        "date": "2023-07-21",
+        "jobTitle": "Product Manager",
+        "company": "Nordic Tech Solutions",
+        "workCultureFeedbackScores": {
+            "mentalWellBeing": 3,
+            "careerDevelopment": 3,
+            "leadershipStyle": 4,
+            "crossDepartmentCollaboration": 3,
+            "recognitionOfAchievements": 3,
+            "workLifeBalance": 3,
+            "companyStabilityAndGrowth": 4,
+            "competitiveCompensation": 3
+        },
+        "benefitsFeedbackScores": {
+            "paidSickLeave": 4,
+            "healthInsurance": 4,
+            "pensionPlans": 3,
+            "remoteWorkOptions": 3,
+            "childcareSupport": 1,
+            "flexibleWorkingHours": 4,
+            "fitnessProgram": 3
+        }
+    },
+    {
+        "fullName": "Mika Laaksonen",
+        "date": "2023-09-10",
+        "jobTitle": "DevOps Engineer",
+        "company": "Nordic Tech Solutions",
+        "workCultureFeedbackScores": {
+            "mentalWellBeing": 3,
+            "careerDevelopment": 2,
+            "leadershipStyle": 3,
+            "crossDepartmentCollaboration": 4,
+            "recognitionOfAchievements": 4,
+            "workLifeBalance": 3,
+            "companyStabilityAndGrowth": 5,
+            "competitiveCompensation": 3
+        },
+        "benefitsFeedbackScores": {
+            "paidSickLeave": 4,
+            "healthInsurance": 5,
+            "pensionPlans": 3,
+            "remoteWorkOptions": 3,
+            "childcareSupport": 2,
+            "flexibleWorkingHours": 4,
+            "fitnessProgram": 3
+        }
+    },
+    {
+        "fullName": "Anni Koskinen",
+        "date": "2023-06-18",
+        "jobTitle": "UI/UX Designer",
+        "company": "Nordic Tech Solutions",
+        "workCultureFeedbackScores": {
+            "mentalWellBeing": 4,
+            "careerDevelopment": 3,
+            "leadershipStyle": 3,
+            "crossDepartmentCollaboration": 3,
+            "recognitionOfAchievements": 3,
+            "workLifeBalance": 4,
+            "companyStabilityAndGrowth": 4,
+            "competitiveCompensation": 3
+        },
+        "benefitsFeedbackScores": {
+            "paidSickLeave": 4,
+            "healthInsurance": 4,
+            "pensionPlans": 3,
+            "remoteWorkOptions": 3,
+            "childcareSupport": 2,
+            "flexibleWorkingHours": 4,
+            "fitnessProgram": 3
+        }
+    },
+    {
+        "fullName": "Kalle Virtanen",
+        "date": "2023-05-30",
+        "jobTitle": "Backend Developer",
+        "company": "Nordic Tech Solutions",
+        "workCultureFeedbackScores": {
+            "mentalWellBeing": 3,
+            "careerDevelopment": 2,
+            "leadershipStyle": 3,
+            "crossDepartmentCollaboration": 3,
+            "recognitionOfAchievements": 2,
+            "workLifeBalance": 3,
+            "companyStabilityAndGrowth": 4,
+            "competitiveCompensation": 3
+        },
+        "benefitsFeedbackScores": {
+            "paidSickLeave": 4,
+            "healthInsurance": 4,
+            "pensionPlans": 3,
+            "remoteWorkOptions": 3,
+            "childcareSupport": 2,
+            "flexibleWorkingHours": 4,
+            "fitnessProgram": 3
+        }
+    },
+    {
+        "fullName": "Eric Ericsson",
+        "date": "2023-08-14",
+        "jobTitle": "Financial Analyst",
+        "company": "Scandi Finance Group",
+        "workCultureFeedbackScores": {
+            "mentalWellBeing": 3,
+            "careerDevelopment": 2,
+            "leadershipStyle": 3,
+            "crossDepartmentCollaboration": 2,
+            "recognitionOfAchievements": 3,
+            "workLifeBalance": 3,
+            "companyStabilityAndGrowth": 4,
+            "competitiveCompensation": 3
+        },
+        "benefitsFeedbackScores": {
+            "paidSickLeave": 3,
+            "healthInsurance": 3,
+            "pensionPlans": 3,
+            "remoteWorkOptions": 1,
+            "childcareSupport": 1,
+            "flexibleWorkingHours": 2,
+            "fitnessProgram": 1
+        }
+    },
+    {
+        "fullName": "Anna Haugland",
+        "date": "2023-09-01",
+        "jobTitle": "Account Manager",
+        "company": "Scandi Finance Group",
+        "workCultureFeedbackScores": {
+            "mentalWellBeing": 3,
+            "careerDevelopment": 2,
+            "leadershipStyle": 3,
+            "crossDepartmentCollaboration": 2,
+            "recognitionOfAchievements": 3,
+            "workLifeBalance": 3,
+            "companyStabilityAndGrowth": 4,
+            "competitiveCompensation": 3
+        },
+        "benefitsFeedbackScores": {
+            "paidSickLeave": 3,
+            "healthInsurance": 3,
+            "pensionPlans": 3,
+            "remoteWorkOptions": 1,
+            "childcareSupport": 1,
+            "flexibleWorkingHours": 2,
+            "fitnessProgram": 1
+        }
+    },
+    {
+        "fullName": "Mats Lind",
+        "date": "2023-10-07",
+        "jobTitle": "Risk Analyst",
+        "company": "Scandi Finance Group",
+        "workCultureFeedbackScores": {
+            "mentalWellBeing": 3,
+            "careerDevelopment": 2,
+            "leadershipStyle": 3,
+            "crossDepartmentCollaboration": 2,
+            "recognitionOfAchievements": 3,
+            "workLifeBalance": 3,
+            "companyStabilityAndGrowth": 4,
+            "competitiveCompensation": 3
+        },
+        "benefitsFeedbackScores": {
+            "paidSickLeave": 3,
+            "healthInsurance": 3,
+            "pensionPlans": 3,
+            "remoteWorkOptions": 1,
+            "childcareSupport": 1,
+            "flexibleWorkingHours": 2,
+            "fitnessProgram": 1
+        }
+    },
+    {
+        "fullName": "Amanda Capri",
+        "jobTitle": "Project Manager",
+        "company": "Scandinavian Consulting Group",
+        "date": "2023-05-15",
+        "workCultureFeedbackScores": {
+            "mentalWellBeing": 4,
+            "careerDevelopment": 3,
+            "leadershipStyle": 4,
+            "crossDepartmentCollaboration": 4,
+            "recognitionOfAchievements": 4,
+            "workLifeBalance": 4
+        },
+        "benefitsFeedbackScores": {
+            "paidSickLeave": 5,
+            "healthInsurance": 3,
+            "pensionPlans": 3,
+            "remoteWorkOptions": 4,
+            "fitnessProgram": 3
+        }
+    },
+    {
+        "fullName": "Lars Johansen",
+        "jobTitle": "Senior Consultant",
+        "company": "Scandinavian Consulting Group",
+        "date": "2023-06-20",
+        "workCultureFeedbackScores": {
+            "mentalWellBeing": 3,
+            "careerDevelopment": 3,
+            "leadershipStyle": 4,
+            "crossDepartmentCollaboration": 3,
+            "recognitionOfAchievements": 3,
+            "workLifeBalance": 3
+        },
+        "benefitsFeedbackScores": {
+            "paidSickLeave": 4,
+            "healthInsurance": 3,
+            "pensionPlans": 3,
+            "remoteWorkOptions": 3,
+            "fitnessProgram": 2
+        }
+    },
+    {
+        "fullName": "Eva Lindberg",
+        "jobTitle": "Marketing Specialist",
+        "company": "Scandinavian Consulting Group",
+        "date": "2023-07-10",
+        "workCultureFeedbackScores": {
+            "mentalWellBeing": 4,
+            "careerDevelopment": 3,
+            "leadershipStyle": 4,
+            "crossDepartmentCollaboration": 3,
+            "recognitionOfAchievements": 3,
+            "workLifeBalance": 4
+        },
+        "benefitsFeedbackScores": {
+            "paidSickLeave": 5,
+            "healthInsurance": 3,
+            "pensionPlans": 3,
+            "remoteWorkOptions": 3,
+            "fitnessProgram": 3
+        }
+    },
+    {
+        "fullName": "Henrik Olsson",
+        "jobTitle": "Business Analyst",
+        "company": "Scandinavian Consulting Group",
+        "date": "2023-08-05",
+        "workCultureFeedbackScores": {
+            "mentalWellBeing": 3,
+            "careerDevelopment": 3,
+            "leadershipStyle": 3,
+            "crossDepartmentCollaboration": 3,
+            "recognitionOfAchievements": 3,
+            "workLifeBalance": 3
+        },
+        "benefitsFeedbackScores": {
+            "paidSickLeave": 4,
+            "healthInsurance": 3,
+            "pensionPlans": 3,
+            "remoteWorkOptions": 3,
+            "fitnessProgram": 2
+        }
+    },
+    {
+        "fullName": "Sara Niemi",
+        "jobTitle": "HR Specialist",
+        "company": "Scandinavian Consulting Group",
+        "date": "2023-09-12",
+        "workCultureFeedbackScores": {
+            "mentalWellBeing": 4,
+            "careerDevelopment": 3,
+            "leadershipStyle": 4,
+            "crossDepartmentCollaboration": 3,
+            "recognitionOfAchievements": 4,
+            "workLifeBalance": 5
+        },
+        "benefitsFeedbackScores": {
+            "paidSickLeave": 4,
+            "healthInsurance": 3,
+            "pensionPlans": 3,
+            "remoteWorkOptions": 3,
+            "fitnessProgram": 3
+        }
+    }
+]
