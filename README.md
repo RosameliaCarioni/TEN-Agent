@@ -25,7 +25,7 @@ Imagine if finding the perfect workplace—a place where you thrive—was as sim
 - **Company Insights and Transparency**: Provides anonymized insights into employee sentiment, highlighting alignment gaps between the company’s stated values and real employee experiences.
 
 ## Demo
-[Check out our video](https://youtu.be/hAZHlIzyVuk)
+[![Watch a short demo](https://img.youtube.com/vi/hAZHlIzyVuk/0.jpg)](https://youtu.be/hAZHlIzyVuk)
 
 [Check out our project on Junction's website](https://eu.junctionplatform.com/projects/junction-2024/view/672e82996afb9482214df2be)
 
@@ -34,8 +34,10 @@ Imagine if finding the perfect workplace—a place where you thrive—was as sim
 [TEN Agent](https://agent.theten.ai) is the core technology driving Well Linked’s interactive AI-powered conversations. It demonstrates multimodal capabilities in speech, text, and reasoning using the TEN Framework and OpenAI Realtime API.
 
 ## Installation and Setup Guide
-
 This section will guide you through setting up Well Linked locally using the TEN Framework.
+
+## Branch Information
+The main working branch for this repository is `junction`. Please make sure to base all contributions and pull requests on the `junction` branch.
 
 ### Prerequisites
 
