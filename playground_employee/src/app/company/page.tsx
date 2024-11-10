@@ -5,7 +5,7 @@ import styles from "./index.module.scss"
 import { useEffect, useRef } from "react"
 import * as d3 from "d3";
 
-export default function Stats() {
+export default function Company() {
 
   const svgRef = useRef();
   const svgBubbleRef = useRef();
@@ -235,7 +235,7 @@ export default function Stats() {
     <div className={styles.content}>
       <div className={styles.body}>
         <div>
-          <h1>Your cultural alignment and opportunities</h1>
+          <h1>Employees experience (Company view)</h1>
           <div className={styles.grid}>
             <div><h3>Your workplace priorities</h3><svg ref={svgRef}></svg></div>
             <div><h3>Company Perks and Values match</h3><svg ref={svgBubbleRef}></svg></div>

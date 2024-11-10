@@ -235,7 +235,7 @@ export default function Stats() {
     <div className={styles.content}>
       <div className={styles.body}>
         <div>
-          <h1>Your cultural alignment and opportunities</h1>
+          <h1>Your current workplace climate</h1>
           <div className={styles.grid}>
             <div><h3>Your workplace priorities</h3><svg ref={svgRef}></svg></div>
             <div><h3>Company Perks and Values match</h3><svg ref={svgBubbleRef}></svg></div>
