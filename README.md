@@ -25,7 +25,8 @@ Imagine if finding the perfect workplace—a place where you thrive—was as sim
 - **Company Insights and Transparency**: Provides anonymized insights into employee sentiment, highlighting alignment gaps between the company’s stated values and real employee experiences.
 
 ## Demo
-**TODO:** Add a demo link or a GIF showcasing the project.
+[Check out our video](https://youtu.be/hAZHlIzyVuk)
+[Check out our project on Junction's website](https://eu.junctionplatform.com/projects/junction-2024/view/672e82996afb9482214df2be)
 
 ## TEN Agent
 
