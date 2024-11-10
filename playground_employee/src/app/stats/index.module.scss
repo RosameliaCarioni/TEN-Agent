@@ -6,6 +6,9 @@
 }
 
 .body {
+
+    padding-bottom: 100px;
+
     h1 {
         display: block;
         padding: 20px 50px;
@@ -78,5 +81,26 @@
 
     }
 
+}
 
+.btnNext {
+    width: 250px;
+    height: 60px;
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    background: #ffffff20;
+    align-self: stretch;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    user-select: none;
+    caret-color: transparent;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+    text-align: center;
+    margin: 10px auto 150px;
 }

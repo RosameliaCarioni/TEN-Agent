@@ -19,12 +19,14 @@ import { setGraphName, setLanguage } from "@/store/reducers/global"
 import PdfSelect from "@/components/pdfSelect"
 import { NextRequest, NextResponse } from 'next/server';
 import { rtcManager } from "@/manager"
+import { useRouter } from "next/navigation"
 const { AGENT_SERVER_URL } = process.env;
 
 
 let intervalId: any
 
 const Description = () => {
+  const router = useRouter()
   const dispatch = useAppDispatch()
   const agentConnected = useAppSelector(state => state.global.agentConnected)
   const channel = useAppSelector(state => state.global.options.channel)
@@ -87,6 +89,10 @@ const Description = () => {
       startPing()
     }
     setLoading(false)
+  }
+
+  const onClickStats = async () => {
+    router.push("/stats")
   }
 
   const startPing = () => {
@@ -152,6 +158,10 @@ const Description = () => {
         {showLoading ? <LoadingOutlined className={styles.loading}></LoadingOutlined> : null}
       </span>
     </span>
+
+    {agentConnected ? <span className={styles.btnNext} onClick={onClickStats}>
+      Ok, let's move on.
+    </span> : null}
   </div>
 }
 
