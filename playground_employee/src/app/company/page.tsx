@@ -5,6 +5,8 @@ import styles from "./index.module.scss"
 import { useEffect, useRef } from "react"
 import * as d3 from "d3";
 import Dots from "@/assets/company-dots.png"
+import Perf from "@/assets/performance.png"
+import Mgmt from "@/assets/Mgmt.png"
 import Image from "next/image"
 
 export default function Company() {
@@ -17,7 +19,14 @@ export default function Company() {
           <h1>Employees experience (Company view)</h1>
           <div className={styles.grid}>
             <div><h3>Current value indices</h3>
-
+              <Image
+                src={Mgmt}
+                alt="Mgmt"
+                style={{
+                  height: "311px",
+                  width: "286px",
+                }}
+              />
             </div>
             <div><h3>Departments overview</h3>
               <Image
@@ -29,8 +38,15 @@ export default function Company() {
                 }}
               />
             </div>
-            <div><h3>Perfprmance compared to last Q</h3>
-
+            <div><h3>Performance compared to last Q</h3>
+              <Image
+                src={Perf}
+                alt="Perf"
+                style={{
+                  height: "548px",
+                  width: "667px",
+                }}
+              />
             </div>
             <div className={styles.summaries}><h3>Employees' insights</h3>
               <p>
