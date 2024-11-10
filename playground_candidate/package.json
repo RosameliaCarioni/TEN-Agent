@@ -32,6 +32,7 @@
     "@types/react-dom": "^18",
     "@types/react-redux": "^7.1.22",
     "autoprefixer": "^10.4.16",
+    "d3": "^7.9.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
     "postcss": "^8.4.31",

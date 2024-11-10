@@ -28,7 +28,7 @@ const Header = () => {
     </span>
     <InfoPopover>
       <span className={styles.content}>
-        <span className={styles.text}>Meet Nova&nbsp;</span>
+        <span className={styles.text}></span>
       </span>
     </InfoPopover>
     <div className={styles.links}>

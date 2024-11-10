@@ -13,14 +13,11 @@ const Header = () => {
   const options = useAppSelector(state => state.global.options)
   const { channel } = options
 
-
   const onClickGithub = () => {
     if (typeof window !== "undefined") {
       window.open(GITHUB_URL, "_blank")
     }
   }
-
-
 
   return <div className={styles.header}>
     <span className={styles.logoWrapper}>
@@ -28,7 +25,7 @@ const Header = () => {
     </span>
     <InfoPopover>
       <span className={styles.content}>
-        <span className={styles.text}>Meet Nova&nbsp;</span>
+        <span className={styles.text}></span>
       </span>
     </InfoPopover>
     <div className={styles.links}>
