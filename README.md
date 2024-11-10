@@ -26,6 +26,7 @@ Imagine if finding the perfect workplace—a place where you thrive—was as sim
 
 ## Demo
 [Check out our video](https://youtu.be/hAZHlIzyVuk)
+
 [Check out our project on Junction's website](https://eu.junctionplatform.com/projects/junction-2024/view/672e82996afb9482214df2be)
 
 ## TEN Agent
