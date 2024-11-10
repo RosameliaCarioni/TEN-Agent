@@ -79,4 +79,23 @@
     border: 1px solid var(--Error-400-T, #E95C7B);
   }
 
+  .btnNext {
+    width: 200px;
+    display: flex;
+    padding: 8px 14px;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    color: #fff;
+    align-self: stretch;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    background: transparent;
+    cursor: pointer;
+    user-select: none;
+    caret-color: transparent;
+    box-sizing: border-box;
+    transition: all .3s ease-in-out;
+  }
+
 }

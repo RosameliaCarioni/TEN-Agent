@@ -33,6 +33,10 @@ export const GRAPH_OPTIONS: GraphOptionItem[] = [
     value: "agent_candidate",
   },
   {
+    label: "Candidate Results",
+    value: "agent_candidate_reveal",
+  },
+  {
     label: "Employee",
     value: "agent_employee",
   }

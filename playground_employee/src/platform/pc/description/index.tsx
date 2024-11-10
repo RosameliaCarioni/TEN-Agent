@@ -59,7 +59,7 @@ const Description = () => {
       await apiStopService(channel)
       await rtcManager.destroy()
       dispatch(setAgentConnected(false))
-      message.success("Amie disconnected")
+      message.success("Nico disconnected")
       stopPing()
     } else {
       let properties: Record<string, any> = overridenProperties[graphName] || {}
