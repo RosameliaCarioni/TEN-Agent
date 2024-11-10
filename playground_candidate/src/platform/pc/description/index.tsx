@@ -83,7 +83,7 @@ const Description = () => {
         throw new Error(msg)
       }
       dispatch(setAgentConnected(true))
-      message.success("Amie connected")
+      message.success("Nova connected")
       startPing()
     }
     setLoading(false)
@@ -152,6 +152,9 @@ const Description = () => {
         {showLoading ? <LoadingOutlined className={styles.loading}></LoadingOutlined> : null}
       </span>
     </span>
+    {agentConnected ? <span className={styles.btnNext} onClick={onClickConnect}>
+      Next
+    </span> : null}
   </div>
 }
 

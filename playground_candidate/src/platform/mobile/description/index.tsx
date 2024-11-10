@@ -71,7 +71,7 @@ const Description = () => {
         throw new Error(msg)
       }
       dispatch(setAgentConnected(true))
-      message.success("Amie connected")
+      message.success("Nova connected")
       startPing()
     }
     setLoading(false)

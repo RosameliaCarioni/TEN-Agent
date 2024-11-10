@@ -44,7 +44,7 @@ const InfoPopover = (props: InfoPopoverProps) => {
       <div className={styles.content}>{roomConnectedText}</div>
     </div>
     <div className={styles.item}>
-      <div className={styles.title}>Amie connected</div>
+      <div className={styles.title}>Nova connected</div>
       <div className={styles.content}>{agentConnectedText}</div>
     </div>
   </section>
