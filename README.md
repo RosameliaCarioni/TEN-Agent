@@ -19,15 +19,13 @@ Imagine if finding the perfect workplace—a place where you thrive—was as sim
 
 **Well Linked** is a platform dedicated to bridging the gap between job seekers and companies by aligning candidates' preferences for work culture, benefits, and values with what companies genuinely offer. Through data collection from employees, company information, and external sources (such as Glassdoor), Well Linked uses AI supported by [TEN Framework](https://github.com/TEN-framework/ten_framework) to match candidates with workplaces that fit their goals while providing companies with actionable insights to improve their workplace environment and employee satisfaction.
 
+[Check out our project on Junction's website](https://eu.junctionplatform.com/projects/junction-2024/view/672e82996afb9482214df2be)
+
 ### Core Features
 - **Employee Feedback and External Data Integration**: Collects employee feedback through the AI agent's (Nico) conversations and supplements it with external information to create a complete view of company culture.
 - **Personalized Job Matching**: By collecting information from job seekers through the AI agent Nova, it matches job seekers with roles based on cultural alignment, benefits preferences, and skills, fostering better long-term fits.
 - **Company Insights and Transparency**: Provides anonymized insights into employee sentiment, highlighting alignment gaps between the company’s stated values and real employee experiences.
 
-## Demo
-[![Watch a short demo](https://img.youtube.com/vi/hAZHlIzyVuk/0.jpg)](https://youtu.be/hAZHlIzyVuk)
-
-[Check out our project on Junction's website](https://eu.junctionplatform.com/projects/junction-2024/view/672e82996afb9482214df2be)
 
 ## TEN Agent
 
