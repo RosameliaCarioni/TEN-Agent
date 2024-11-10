@@ -97,14 +97,14 @@ const Description = () => {
       return
     }
     setLoading(true)
+
     if (agentConnected) {
       await apiStopService(channel)
       await rtcManager.destroy()
       dispatch(setAgentConnected(false))
+      dispatch(setGraphName("agent_candidate_reveal"))
       stopPing()
     }
-
-    dispatch(setGraphName("agent_candidate_reveal"))
 
     let properties: Record<string, any> = overridenProperties[graphName] || {}
     await rtcManager.connect({ channel, userId })
@@ -130,9 +130,18 @@ const Description = () => {
     message.success("Nova connected")
     startPing()
     setLoading(false)
+
+
+
   }
 
   const onClickStats = async () => {
+    if (agentConnected) {
+      await apiStopService(channel)
+      await rtcManager.destroy()
+      dispatch(setAgentConnected(false))
+      stopPing()
+    }
     router.push("/stats")
   }
 
@@ -169,7 +178,7 @@ const Description = () => {
 
   return <div className={styles.description}>
 
-    <span className={styles.text}>Nova is an intelligent companion for scouting positions in companies aligning with your values</span>
+    <span className={styles.text}>Nova is an intelligent companion for scouting positions in companies aligning with your values and well being</span>
     {/*
     <CustomSelect className={styles.voiceSelect}
         disabled={agentConnected}

@@ -257,7 +257,9 @@ export default function Stats() {
               </p>
             </div>
           </div>
-
+          <a className={styles.btnNext} href="https://well-linked.duckdns.org/employee">
+            Ok, let's pretend I got hired!
+          </a>
         </div>
       </div>
     </div >
