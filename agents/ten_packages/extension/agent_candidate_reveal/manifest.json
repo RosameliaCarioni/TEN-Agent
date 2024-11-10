@@ -1,0 +1,153 @@
+{
+  "type": "extension",
+  "name": "agent_candidate_reveal",
+  "version": "0.1.0",
+  "dependencies": [
+    {
+      "type": "system",
+      "name": "ten_runtime_python",
+      "version": "0.3"
+    }
+  ],
+  "package": {
+    "include": [
+      "manifest.json",
+      "property.json",
+      "BUILD.gn",
+      "**.tent",
+      "**.py",
+      "README.md",
+      "realtime/**.tent",
+      "realtime/**.py"
+    ]
+  },
+  "api": {
+    "property": {
+      "api_key": {
+        "type": "string"
+      },
+      "base_uri": {
+        "type": "string"
+      },
+      "path": {
+        "type": "string"
+      },
+      "vendor": {
+        "type": "string"
+      },
+      "temperature": {
+        "type": "float64"
+      },
+      "model": {
+        "type": "string"
+      },
+      "max_tokens": {
+        "type": "int64"
+      },
+      "system_message": {
+        "type": "string"
+      },
+      "voice": {
+        "type": "string"
+      },
+      "server_vad": {
+        "type": "bool"
+      },
+      "language": {
+        "type": "string"
+      },
+      "dump": {
+        "type": "bool"
+      },
+      "greeting": {
+        "type": "string"
+      },
+      "history": {
+        "type": "int64"
+      },
+      "enable_storage": {
+        "type": "bool"
+      }
+    },
+    "audio_frame_in": [
+      {
+        "name": "pcm_frame",
+        "property": {
+          "stream_id": {
+            "type": "int64"
+          }
+        }
+      }
+    ],
+    "data_out": [
+      {
+        "name": "text_data",
+        "property": {
+          "text": {
+            "type": "string"
+          }
+        }
+      },
+      {
+        "name": "append",
+        "property": {
+          "text": {
+            "type": "string"
+          }
+        }
+      }
+    ],
+    "cmd_in": [
+      {
+        "name": "tool_register",
+        "property": {
+          "name": {
+            "type": "string"
+          },
+          "description": {
+            "type": "string"
+          },
+          "parameters": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name",
+          "description",
+          "parameters"
+        ],
+        "result": {
+          "property": {
+            "response": {
+              "type": "string"
+            }
+          }
+        }
+      }
+    ],
+    "cmd_out": [
+      {
+        "name": "flush"
+      },
+      {
+        "name": "tool_call",
+        "property": {
+          "name": {
+            "type": "string"
+          },
+          "args": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "name"
+        ]
+      }
+    ],
+    "audio_frame_out": [
+      {
+        "name": "pcm_frame"
+      }
+    ]
+  }
+}

@@ -338,6 +338,175 @@
             ]
           }
         ]
+      },
+      {
+        "name": "agent_candidate_reveal",
+        "auto_start": true,
+        "nodes": [
+          {
+            "type": "extension",
+            "name": "agora_rtc",
+            "addon": "agora_rtc",
+            "extension_group": "rtc",
+            "property": {
+              "app_id": "${env:AGORA_APP_ID}",
+              "token": "",
+              "channel": "ten_agent_test",
+              "stream_id": 1234,
+              "remote_stream_id": 123,
+              "subscribe_audio": true,
+              "publish_audio": true,
+              "publish_data": true,
+              "subscribe_audio_sample_rate": 24000
+            }
+          },
+          {
+            "type": "extension",
+            "name": "agent_candidate_reveal",
+            "addon": "agent_candidate_reveal",
+            "extension_group": "llm",
+            "property": {
+              "api_key": "${env:OPENAI_REALTIME_API_KEY}",
+              "temperature": 0.9,
+              "model": "gpt-4o-realtime-preview",
+              "max_tokens": 2048,
+              "voice": "alloy",
+              "language": "en-US",
+              "server_vad": true,
+              "dump": true,
+              "history": 10
+            }
+          },
+          {
+            "type": "extension",
+            "name": "message_collector",
+            "addon": "message_collector",
+            "extension_group": "transcriber"
+          },
+          {
+            "type": "extension",
+            "name": "weatherapi_tool_python",
+            "addon": "weatherapi_tool_python",
+            "extension_group": "tools",
+            "property": {
+              "api_key": "${env:WEATHERAPI_API_KEY}"
+            }
+          },
+          {
+            "type": "extension",
+            "name": "bingsearch_tool_python",
+            "addon": "bingsearch_tool_python",
+            "extension_group": "tools",
+            "property": {
+              "api_key": "${env:BING_API_KEY}"
+            }
+          },
+          {
+            "type": "extension",
+            "name": "buf2msg",
+            "addon": "buf2msg",
+            "extension_group": "transcriber"
+          }
+        ],
+        "connections": [
+          {
+            "extension_group": "rtc",
+            "extension": "agora_rtc",
+            "audio_frame": [
+              {
+                "name": "pcm_frame",
+                "dest": [
+                  {
+                    "extension_group": "llm",
+                    "extension": "agent_candidate_reveal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "extension_group": "tools",
+            "extension": "weatherapi_tool_python",
+            "cmd": [
+              {
+                "name": "tool_register",
+                "dest": [
+                  {
+                    "extension_group": "llm",
+                    "extension": "agent_candidate_reveal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "extension_group": "tools",
+            "extension": "bingsearch_tool_python",
+            "cmd": [
+              {
+                "name": "tool_register",
+                "dest": [
+                  {
+                    "extension_group": "llm",
+                    "extension": "agent_candidate_reveal"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "extension_group": "llm",
+            "extension": "agent_candidate_reveal",
+            "cmd": [
+              {
+                "name": "flush",
+                "dest": [
+                  {
+                    "extension_group": "rtc",
+                    "extension": "agora_rtc"
+                  }
+                ]
+              }
+            ],
+            "data": [
+              {
+                "name": "text_data",
+                "dest": [
+                  {
+                    "extension_group": "transcriber",
+                    "extension": "message_collector"
+                  }
+                ]
+              }
+            ],
+            "audio_frame": [
+              {
+                "name": "pcm_frame",
+                "dest": [
+                  {
+                    "extension_group": "rtc",
+                    "extension": "agora_rtc"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "extension_group": "transcriber",
+            "extension": "message_collector",
+            "data": [
+              {
+                "name": "data",
+                "dest": [
+                  {
+                    "extension_group": "rtc",
+                    "extension": "agora_rtc"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
       }
     ]
   }

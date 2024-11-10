@@ -650,6 +650,28 @@ class OpenAIV2VExtension(Extension):
             except:
                 logger.exception(
                     f"Error send text data {role}: {sentence} {is_final}")
+                
+            # Construct file paths relative to the /resources folder one level up
+            parent_dir = os.path.abspath(os.path.join(os.getcwd(), ".."))
+            resources_dir = os.path.join(parent_dir, "resources")
+            
+            candidate_cv_path = os.path.join(resources_dir, "candidate_cv.json")
+            candidate_conversation_path = os.path.join(resources_dir, "candidate_conversation.json")
+            employee_feedback_data = os.path.join(resources_dir, "employee_feedback_text.json")
+            companies_data_path = os.path.join(resources_dir, "companies_data.json")
+
+            # Schedule the async method
+            try:
+                if not self.loop.is_running():
+                    logger.error("Event loop not running!")
+                else:
+                    future = asyncio.run_coroutine_threadsafe(
+                        self.summarize_and_match_files(candidate_cv_path, candidate_conversation_path, employee_feedback_data, companies_data_path), 
+                        self.loop
+                    )
+                    future.add_done_callback(self._summarize_done)
+            except Exception as ex:
+                logger.error(f"Failed to run async function in sync context: {ex}")
 
         stream_id = self.remote_stream_id if role == Role.User else 0
         try:
@@ -742,3 +764,69 @@ class OpenAIV2VExtension(Extension):
 
     def _greeting_text(self) -> str:
         return self.greeting
+    
+############## PERFORM MATCHING ##############
+   
+    def read_file(self, file_path):
+        try:
+            with open(file_path, "r") as file:
+                content = file.read()
+                logger.info(f"File {file_path} successfully read")
+                return content
+        except FileNotFoundError:
+            logger.error(f"File not found: {file_path}")
+            return ""
+        except Exception as ex:
+            logger.error(f"Error reading file {file_path}: {ex}")
+            return ""
+
+
+    async def summarize_and_match_files(self, candidate_cv, candidate_conversation, employee_feedback_data, companies_data):
+        cv_content = self.read_file(candidate_cv)
+        conversation_content = self.read_file(candidate_conversation)
+        employee_feedback = self.read_file(employee_feedback_data)
+        companies_content = self.read_file(companies_data)
+
+
+        if not cv_content or not conversation_content or not companies_content:
+            logger.warning("One or both files are empty or not found.")
+            return None
+
+        # Prepare the LLM prompt for summarization and matching
+        prompt = f"""        
+            You are provided with four types of documents:
+
+            1. Candidate CV: Contains details about a person seeking a job, including their skills, experience, and qualifications.
+            2. Candidate Conversation Summary: Summarizes interactions or discussions with the candidate, providing additional context about their preferences, goals, and personality.
+            3. Employee Feedback: Includes feedback from current employees about specific companies, covering aspects such as work culture, management, and overall satisfaction.
+            4. Company Information: Contains detailed data about various companies, including their industry, values, job openings, and growth opportunities.
+
+            **Your Task:**
+            Analyze and merge the information from these four sources to identify the top three companies that best match the candidate's profile. Consider the candidate's skills, preferences, and career goals, alongside the company culture and job opportunities. Don't use the name in the documents, only adress the person as you. Start your analysis with: Based on my analysis, here are the top three company matches for you:
+
+
+            **Output Format:**
+            Provide the top three company matches in a structured format, including:
+            - Company Name
+            - Key Reasons for the Match (e.g., aligned skills, cultural fit, etc.)
+            - Relevant Job Opportunities or Roles
+
+            Candidate CV:
+            {cv_content}
+
+            Conversation Summary:
+            {conversation_content}
+
+            Employee Feedback:
+            {employee_feedback}
+
+            Company Information:
+            {companies_content}
+        """
+        logger.info("GOT HERE")
+        # Send the prompt to the LLM
+        response = await self.conn.send_request(ItemCreate(item=UserMessageItemParam(content=[{"type": ContentType.InputText, "text": prompt}])))
+        summary_match_result = await self.conn.send_request(ResponseCreate())  # Get LLM response
+        logger.info(f"MATCHING DONE WITH RESULT: ",{summary_match_result})
+        logger.info("MATCHING DONE WITH RESULT 2: ",summary_match_result)
+        return summary_match_result["content"]  # Return summarized and matched content
