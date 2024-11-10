@@ -112,6 +112,7 @@ export default function Stats() {
   ];
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
     const margin = { top: 20, right: 20, bottom: 20, left: 110 };
     const width = 500 - margin.left - margin.right;
     const height = 400 - margin.top - margin.bottom;
@@ -174,6 +175,7 @@ export default function Stats() {
   ];
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
     const margin = { top: 40, right: 0, bottom: 0, left: 140 };
     const width = 500 - margin.left - margin.right;
     const height = 500 - margin.top - margin.bottom;

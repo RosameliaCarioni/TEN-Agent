@@ -6,7 +6,7 @@ import './global.css'
 
 
 export const metadata: Metadata = {
-  title: "Nova the job huntress",
+  title: "Well Linked // Meet Nico, your best ally at work. Woof!",
   description: "Your virtual companion",
   appleWebApp: {
     capable: true,

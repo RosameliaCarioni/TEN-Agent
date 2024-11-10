@@ -16,10 +16,10 @@ const AgentChatItem = (props: ChatItemProps) => {
 
   return <div className={`${styles.agentChatItem} ${styles.chatItem}`}>
     <span className={styles.left}>
-      <span className={styles.userName}>Ag</span>
+      <span className={styles.userName}>Nc</span>
     </span>
     <span className={styles.right}>
-      <div className={`${styles.userName} ${styles.agent}`}>Agent</div>
+      <div className={`${styles.userName} ${styles.agent}`}>Nico</div>
       <div className={`${styles.text} ${styles.agent}`}>
         {text}
       </div>

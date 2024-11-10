@@ -7,7 +7,7 @@
 html,
 body {
   background-color: #000;
-  font-family: "PingFang SC";
+  font-family: "Helvetica", sans-serif;
   height: 100%;
   /* Disable user selection highlight across entire app  */
   -webkit-user-select: none;
